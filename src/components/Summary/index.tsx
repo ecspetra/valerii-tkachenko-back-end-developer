@@ -9,7 +9,7 @@ import { CONTACTS_LIST } from '@/constants/contactsList'
 const Summary = () => {
 	return (
 		<div className='relative w-screen min-h-screen overflow-hidden py-60'>
-			<div className='absolute top-0 right-0 w-[30%] h-[30%] max-h-screen opacity-15 bg-[url("../../public/assets/images/top-banner-bg.jpg")] mix-blend-luminosity bg-cover bg-center bg-no-repeat after:absolute after:w-full after:h-[50%] after:bottom-0 after:right-0 after:bg-gradient-to-t after:from-background-color after:to-transparent' />
+			<div className='absolute top-0 right-0 w-[30%] h-[30%] max-h-screen opacity-15 bg-[url("../../public/assets/images/top-banner-bg.jpg")] mix-blend-luminosity bg-cover bg-center bg-no-repeat' />
 			<NestedCircles
 				count={5}
 				radius={700}
@@ -41,7 +41,7 @@ const Summary = () => {
 						</span>{' '}
 						.
 					</p>
-					<p className='pl-20 mb-20'>
+					<p className='pl-20 mb-16'>
 						I have established myself as a software engineer who
 						enthusiastically takes on new challenges across the full
 						stack.
@@ -72,12 +72,12 @@ const Summary = () => {
 					<img
 						className='absolute max-w-[80%] -z-10 -bottom-60 left-0 opacity-15 w-full mix-blend-luminosity'
 						src={summaryImageOne.src}
-						alt='Top Banner'
+						alt='Summary'
 					/>
 					<img
 						className='ml-auto max-w-[60%]'
 						src={summaryImageOne.src}
-						alt='Top Banner'
+						alt='Summary'
 					/>
 					<div className='absolute left-full top-[30%] w-24 h-1 bg-main-color -z-10' />
 				</div>

@@ -43,13 +43,10 @@ const TopBanner = () => {
 					</Title>
 					<Title
 						variant='h2'
-						className='!mb-40 !text-5xl text-main-color'
+						className='!mb-40 !text-5xl !text-main-color'
 					>
 						<span className='block w-fit mb-2 pb-2 border-b border-border-color'>
-							Back
-						</span>
-						<span className='block w-fit mb-2 pb-2 border-b border-border-color'>
-							End
+							Backend
 						</span>
 						<span className='block w-fit mb-2 pb-2 border-b border-border-color'>
 							Developer

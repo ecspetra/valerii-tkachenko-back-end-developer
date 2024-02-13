@@ -8,15 +8,10 @@ import ExperienceItem from '@/components/Experience/ExperienceItem'
 
 const Experience = () => {
 	return (
-		<div className='relative w-screen min-h-screen overflow-hidden py-60 bg-stone-900'>
-			<NestedCircles
-				count={5}
-				radius={700}
-				className='absolute top-[60%] -right-[10%] opacity-15 -z-10'
-			/>
-			<BackgroundStraightLine className='top-0 left-1/2 -translate-x-1/2 z-0' />
-			<div className='max-w-6xl mx-auto w-full px-6 relative z-10'>
-				<Title className='text-center' variant='h2'>
+		<div className='relative w-screen min-h-screen py-60 bg-gradient-to-b from-stone-900 to-background-color'>
+			<BackgroundStraightLine className='-top-40 left-1/2 -translate-x-1/2 z-0' />
+			<div className='container max-w-6xl mx-auto w-full px-6 relative z-10'>
+				<Title className='text-center !mb-40' variant='h2'>
 					Experience
 				</Title>
 				<div>

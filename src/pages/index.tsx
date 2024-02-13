@@ -4,6 +4,7 @@ import Header from '@/app/components/Header'
 import Summary from '@/components/Summary'
 import Footer from '@/app/components/Footer'
 import Experience from '@/components/Experience'
+import Skills from '@/components/Skills'
 
 const outfitFont = Outfit({
 	weight: ['100', '200', '300', '400', '500', '600'],
@@ -23,6 +24,7 @@ const Home = () => {
 				<TopBanner />
 				<Summary />
 				<Experience />
+				<Skills />
 			</main>
 			<Footer
 				className={`${outfitFont.variable} font-sans text-main-text-color`}

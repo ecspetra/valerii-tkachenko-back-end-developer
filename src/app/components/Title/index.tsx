@@ -25,7 +25,7 @@ const Title: FC<PropsType> = ({ children, className, variant = 'h1' }) => {
 				return (
 					<h2
 						className={classNames(
-							'text-8xl font-medium mb-20',
+							'text-8xl font-medium text-white mb-16',
 							className
 						)}
 					>
@@ -36,7 +36,7 @@ const Title: FC<PropsType> = ({ children, className, variant = 'h1' }) => {
 				return (
 					<h3
 						className={classNames(
-							'text-3xl font-normal',
+							'text-3xl font-normal text-white',
 							className
 						)}
 					>

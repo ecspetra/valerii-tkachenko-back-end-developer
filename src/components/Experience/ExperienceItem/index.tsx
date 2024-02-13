@@ -34,25 +34,23 @@ const ExperienceItem: FC<PropsType> = ({
 	idx,
 	isEven,
 }) => (
-	<div className='w-full mb-8 pb-8 2xl:mb-16 2xl:pb-16 last:mb-0 last:pb-0 flex justify-between items-center'>
+	<div className='group w-full mb-8 pb-8 2xl:mb-16 2xl:pb-16 last:mb-0 last:pb-0 flex justify-between items-center'>
 		<div
 			className={classNames(
-				'w-full max-w-[40%] p-12',
+				'w-full max-w-[40%] px-24',
 				isEven ? 'text-right order-1' : 'text-left order-2'
 			)}
 		>
-			<Title variant='h3' className='!mb-4'>
-				<span className='text-main-color border-b border-border-color'>
-					{company}
-				</span>
-				<span className='ml-2 !font-extralight'>{branch}</span>
+			<Title variant='h3' className='!mb-8'>
+				{company}
+				<span className='block !font-extralight'>{branch}</span>
 			</Title>
-			<p>{country}</p>
-			<p>{date}</p>
+			<p className='text-dark-text-color'>{country}</p>
+			<p className='text-dark-text-color'>{date}</p>
 		</div>
 		<div
 			className={classNames(
-				'relative w-full max-w-[60%] p-12 border border-border-color bg-stone-900',
+				'relative duration-300 group-hover:border-main-color w-full max-w-[60%] p-12 border-4 border-main-color/30 bg-stone-900',
 				isEven ? 'order-2' : 'order-1'
 			)}
 		>
@@ -80,14 +78,17 @@ const ExperienceItem: FC<PropsType> = ({
 					isEven ? '-left-16' : '-right-16'
 				)}
 			/>
-			<Title variant='h3' className='!mb-8'>
+			<Title
+				variant='h3'
+				className='w-fit !mb-10 !text-main-color border-b border-border-color'
+			>
 				{job}
 			</Title>
-			<ul className='mb-8'>
+			<ul className='mb-12'>
 				{responsibilities.map((item, idx) => (
 					<li
 						key={idx}
-						className='mb-1 flex justify-start items-start'
+						className='mb-4 flex justify-start items-start'
 					>
 						<span className='mr-4'>—</span>
 						{item}
