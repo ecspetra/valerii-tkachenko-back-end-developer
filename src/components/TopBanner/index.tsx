@@ -5,6 +5,8 @@ import BackgroundStraightLine from '@/app/assets/images/BackgroundStraightLine'
 import NestedCircles from '@/app/assets/images/NestedCircles'
 import LinesShape from '@/app/assets/images/LinesShape'
 import Rectangle from '@/app/assets/images/Rectangle'
+import BasicCircle from '@/app/assets/images/BasicCircle'
+import Noize from '@/app/assets/images/Noize'
 
 const TopBanner = () => {
 	return (
@@ -12,7 +14,7 @@ const TopBanner = () => {
 			className='relative w-screen min-h-screen overflow-hidden'
 			id='top-banner'
 		>
-			<div className='absolute top-0 left-0 w-[40%] h-full max-h-screen opacity-40 bg-[url("../../public/assets/images/test/IMG_6217.JPG")] bg-cover bg-center bg-no-repeat' />
+			<div className='absolute top-0 left-0 w-[40%] h-full max-h-screen opacity-40 bg-[url("../../public/assets/images/background-image-1.jpg")] bg-cover bg-center bg-no-repeat' />
 			<NestedCircles
 				count={3}
 				radius={800}
@@ -37,13 +39,13 @@ const TopBanner = () => {
 					/>
 					<LinesShape className='-left-24 top-[30%] rotate-45' />
 					<Rectangle className='bottom-0 left-0 w-[10%] h-[20%]' />
-					<div className='absolute top-[15%] -right-[30%] w-[500px] h-[500px] opacity-20 bg-[url("../../public/assets/images/noize-circle.svg")] bg-cover bg-center bg-no-repeat -z-10' />
+					<Noize className='top-[15%] -right-[30%]' />
 				</div>
 				<div className='relative z-20 w-full max-w-md lg:max-w-xl'>
 					<Title className='relative -ml-[50%]'>
 						<span className='block'>Valerii</span>
 						<span className='block ml-[5%]'>Tkachenko</span>
-						<div className='absolute -left-24 -top-16 w-80 h-80 bg-background-color rounded-full -z-10' />
+						<BasicCircle className='-left-24 -top-16' isDarkColor />
 					</Title>
 					<Title
 						variant='h2'

@@ -2,12 +2,15 @@ import Title from '@/app/components/Title'
 import NestedCircles from '@/app/assets/images/NestedCircles'
 import BackgroundStraightLine from '@/app/assets/images/BackgroundStraightLine'
 import summaryImageOne from '../../../public/assets/images/11.jpg'
-import summaryImageTwo from '../../../public/assets/images/test/IMG_6220.JPG'
+import summaryImageTwo from '../../../public/assets/images/background-image-3.jpg'
 
 import Contacts from '@/components/Contacts'
 import { CONTACTS_LIST } from '@/constants/contactsList'
 import LinesShape from '@/app/assets/images/LinesShape'
 import Rectangle from '@/app/assets/images/Rectangle'
+import Building from '@/app/assets/images/Building'
+import BasicCircle from '@/app/assets/images/BasicCircle'
+import Noize from '@/app/assets/images/Noize'
 
 const Summary = () => {
 	return (
@@ -15,7 +18,8 @@ const Summary = () => {
 			className='relative w-screen min-h-screen overflow-hidden py-60'
 			id='summary'
 		>
-			<div className='absolute top-0 right-0 w-[30%] h-[30%] bg-[url("../../public/assets/images/test/IMG_6211.JPG")] bg-cover bg-center bg-no-repeat' />
+			<div className='absolute top-0 right-0 w-[30%] h-[30%] bg-[url("../../public/assets/images/background-image-2.jpg")] bg-cover bg-center bg-no-repeat' />
+			<Building className='w-[10%] bottom-0 right-[25%] opacity-20' />
 			<NestedCircles
 				count={5}
 				radius={700}
@@ -83,8 +87,8 @@ const Summary = () => {
 						<Rectangle className='-bottom-12 left-[40%] w-[20%] h-[30%]' />
 					</div>
 					<LinesShape className='-right-24 top-[30%] -rotate-45 -scale-x-100' />
-					<div className='absolute left-[25%] top-[25%] w-80 h-80 bg-main-color rounded-full -z-10' />
-					<div className='absolute -top-[40%] left-[20%] w-[500px] h-[500px] opacity-20 bg-[url("../../public/assets/images/noize-circle.svg")] bg-cover bg-center bg-no-repeat -z-10' />
+					<BasicCircle className='left-[25%] top-[25%]' />
+					<Noize className='-top-[40%] left-[20%]' />
 				</div>
 				<Contacts />
 			</div>
