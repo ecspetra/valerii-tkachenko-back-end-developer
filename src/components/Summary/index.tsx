@@ -1,19 +1,25 @@
 import Title from '@/app/components/Title'
 import NestedCircles from '@/app/assets/images/NestedCircles'
 import BackgroundStraightLine from '@/app/assets/images/BackgroundStraightLine'
-import summaryImageOne from '../../../public/assets/images/summary-image.jpg'
-import summaryImageTwo from '../../../public/assets/images/top-banner-bg.jpg'
+import summaryImageOne from '../../../public/assets/images/11.jpg'
+import summaryImageTwo from '../../../public/assets/images/test/IMG_6220.JPG'
+
 import Contacts from '@/components/Contacts'
 import { CONTACTS_LIST } from '@/constants/contactsList'
+import LinesShape from '@/app/assets/images/LinesShape'
+import Rectangle from '@/app/assets/images/Rectangle'
 
 const Summary = () => {
 	return (
-		<div className='relative w-screen min-h-screen overflow-hidden py-60'>
-			<div className='absolute top-0 right-0 w-[30%] h-[30%] max-h-screen opacity-15 bg-[url("../../public/assets/images/top-banner-bg.jpg")] mix-blend-luminosity bg-cover bg-center bg-no-repeat' />
+		<div
+			className='relative w-screen min-h-screen overflow-hidden py-60'
+			id='summary'
+		>
+			<div className='absolute top-0 right-0 w-[30%] h-[30%] bg-[url("../../public/assets/images/test/IMG_6211.JPG")] bg-cover bg-center bg-no-repeat' />
 			<NestedCircles
 				count={5}
 				radius={700}
-				className='absolute top-[60%] -right-[10%] opacity-15 -z-10'
+				className='absolute top-[60%] -right-[10%] opacity-20 -z-10'
 			/>
 			<BackgroundStraightLine className='left-[30%] top-0' />
 			<BackgroundStraightLine
@@ -25,7 +31,7 @@ const Summary = () => {
 					<NestedCircles
 						count={7}
 						radius={200}
-						className='absolute -top-[30%] -left-[20%] opacity-15 z-10'
+						className='absolute -top-[30%] -left-[20%] opacity-20 z-10'
 					/>
 					<Title variant='h2'>About me</Title>
 					<p className='pl-20 mb-8 text-2xl font-normal'>
@@ -69,17 +75,16 @@ const Summary = () => {
 					>
 						Summary
 					</Title>
-					<img
-						className='absolute max-w-[80%] -z-10 -bottom-60 left-0 opacity-15 w-full mix-blend-luminosity'
-						src={summaryImageOne.src}
-						alt='Summary'
-					/>
-					<img
-						className='ml-auto max-w-[60%]'
-						src={summaryImageOne.src}
-						alt='Summary'
-					/>
-					<div className='absolute left-full top-[30%] w-24 h-1 bg-main-color -z-10' />
+					<div className='absolute max-w-[80%] -bottom-60 left-0 w-full'>
+						<img src={summaryImageTwo.src} alt='Summary' />
+					</div>
+					<div className='relative ml-auto max-w-[60%]'>
+						<img src={summaryImageOne.src} alt='Summary' />
+						<Rectangle className='-bottom-12 left-[40%] w-[20%] h-[30%]' />
+					</div>
+					<LinesShape className='-right-24 top-[30%] -rotate-45 -scale-x-100' />
+					<div className='absolute left-[25%] top-[25%] w-80 h-80 bg-main-color rounded-full -z-10' />
+					<div className='absolute -top-[40%] left-[20%] w-[500px] h-[500px] opacity-20 bg-[url("../../public/assets/images/noize-circle.svg")] bg-cover bg-center bg-no-repeat -z-10' />
 				</div>
 				<Contacts />
 			</div>

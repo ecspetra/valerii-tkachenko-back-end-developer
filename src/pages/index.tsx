@@ -5,6 +5,8 @@ import Summary from '@/components/Summary'
 import Footer from '@/app/components/Footer'
 import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
+import Education from '@/components/Education'
+import BottomBanner from '@/components/BottomBanner'
 
 const outfitFont = Outfit({
 	weight: ['100', '200', '300', '400', '500', '600'],
@@ -25,6 +27,8 @@ const Home = () => {
 				<Summary />
 				<Experience />
 				<Skills />
+				<Education />
+				<BottomBanner />
 			</main>
 			<Footer
 				className={`${outfitFont.variable} font-sans text-main-text-color`}

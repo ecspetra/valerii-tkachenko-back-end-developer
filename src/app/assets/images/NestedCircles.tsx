@@ -20,8 +20,8 @@ const NestedCircles: FC<PropsType> = ({ count, radius, className }) => {
 				cy={radius}
 				r={currentRadius}
 				fill='transparent'
-				stroke='white'
-				strokeWidth='1'
+				stroke={i === 0 ? `rgb(var(--main-color))` : 'white'}
+				strokeWidth={i === 0 ? '2' : '1'}
 				opacity={opacity}
 			/>
 		)
@@ -29,7 +29,12 @@ const NestedCircles: FC<PropsType> = ({ count, radius, className }) => {
 	}
 
 	return (
-		<svg className={className} width={radius * 2} height={radius * 2}>
+		<svg
+			className={className}
+			width={radius * 2}
+			height={radius * 2}
+			viewBox={`0 0 ${radius * 2} ${radius * 2}`}
+		>
 			{circles}
 		</svg>
 	)

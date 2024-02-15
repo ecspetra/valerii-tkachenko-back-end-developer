@@ -9,7 +9,7 @@ const Header: FC<PropsType> = ({ className }) => {
 	return (
 		<header
 			className={classNames(
-				'w-full p-8 fixed top-0 flex justify-between items-center',
+				'w-full p-8 fixed top-0 flex justify-between items-center z-50',
 				className
 			)}
 		>
@@ -20,6 +20,9 @@ const Header: FC<PropsType> = ({ className }) => {
 				</li>
 				<li>
 					<a>Experience</a>
+				</li>
+				<li>
+					<a>Skills</a>
 				</li>
 				<li>
 					<a>Education</a>

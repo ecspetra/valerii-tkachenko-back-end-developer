@@ -41,7 +41,7 @@ const ExperienceItem: FC<PropsType> = ({
 				isEven ? 'text-right order-1' : 'text-left order-2'
 			)}
 		>
-			<Title variant='h3' className='!mb-8'>
+			<Title variant='h3' className='mb-8'>
 				{company}
 				<span className='block !font-extralight'>{branch}</span>
 			</Title>
@@ -50,7 +50,7 @@ const ExperienceItem: FC<PropsType> = ({
 		</div>
 		<div
 			className={classNames(
-				'relative duration-300 group-hover:border-main-color w-full max-w-[60%] p-12 border-4 border-main-color/30 bg-stone-900',
+				'relative duration-300 group-hover:border-main-color w-full max-w-[60%] p-12 border-4 border-main-color/20',
 				isEven ? 'order-2' : 'order-1'
 			)}
 		>
@@ -74,13 +74,13 @@ const ExperienceItem: FC<PropsType> = ({
 				count={4}
 				radius={100}
 				className={classNames(
-					'absolute -top-24 opacity-15 -z-10',
+					'absolute -top-24 opacity-20 -z-10',
 					isEven ? '-left-16' : '-right-16'
 				)}
 			/>
 			<Title
 				variant='h3'
-				className='w-fit !mb-10 !text-main-color border-b border-border-color'
+				className='w-fit mb-10 !text-main-color border-b border-border-color'
 			>
 				{job}
 			</Title>

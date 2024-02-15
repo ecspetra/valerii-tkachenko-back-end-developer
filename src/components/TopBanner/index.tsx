@@ -3,6 +3,8 @@ import Title from '@/app/components/Title'
 import Button from '@/app/components/Button'
 import BackgroundStraightLine from '@/app/assets/images/BackgroundStraightLine'
 import NestedCircles from '@/app/assets/images/NestedCircles'
+import LinesShape from '@/app/assets/images/LinesShape'
+import Rectangle from '@/app/assets/images/Rectangle'
 
 const TopBanner = () => {
 	return (
@@ -10,13 +12,13 @@ const TopBanner = () => {
 			className='relative w-screen min-h-screen overflow-hidden'
 			id='top-banner'
 		>
-			<div className='absolute top-0 left-0 w-[40%] h-full max-h-screen opacity-15 bg-[url("../../public/assets/images/top-banner-bg.jpg")] mix-blend-luminosity bg-cover bg-center bg-no-repeat after:absolute after:w-[50%] after:h-full after:top-0 after:right-0 after:bg-gradient-to-l after:from-background-color after:to-transparent' />
+			<div className='absolute top-0 left-0 w-[40%] h-full max-h-screen opacity-40 bg-[url("../../public/assets/images/test/IMG_6217.JPG")] bg-cover bg-center bg-no-repeat' />
 			<NestedCircles
 				count={3}
 				radius={800}
-				className='absolute top-[80%] -left-[30%] opacity-15 z-10'
+				className='absolute top-[80%] -left-[30%] opacity-20 z-10'
 			/>
-			<div className='container mx-auto w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center px-6'>
+			<div className='container mx-auto w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center px-6 pb-40'>
 				<BackgroundStraightLine className='left-[80%]' />
 				<BackgroundStraightLine className='left-[54%]' />
 				<BackgroundStraightLine className='top-[90%]' isHorizontal />
@@ -31,9 +33,11 @@ const TopBanner = () => {
 					<NestedCircles
 						count={7}
 						radius={500}
-						className='absolute -top-[10%] left-[50%] opacity-15 -z-10'
+						className='absolute -top-[10%] left-[50%] opacity-20 -z-10'
 					/>
-					<div className='absolute right-full top-[30%] w-24 h-1 bg-main-color -z-10' />
+					<LinesShape className='-left-24 top-[30%] rotate-45' />
+					<Rectangle className='bottom-0 left-0 w-[10%] h-[20%]' />
+					<div className='absolute top-[15%] -right-[30%] w-[500px] h-[500px] opacity-20 bg-[url("../../public/assets/images/noize-circle.svg")] bg-cover bg-center bg-no-repeat -z-10' />
 				</div>
 				<div className='relative z-20 w-full max-w-md lg:max-w-xl'>
 					<Title className='relative -ml-[50%]'>
