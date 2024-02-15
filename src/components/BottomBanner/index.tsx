@@ -9,6 +9,7 @@ import LinesShape from '@/app/assets/images/LinesShape'
 import Rectangle from '@/app/assets/images/Rectangle'
 import BasicCircle from '@/app/assets/images/BasicCircle'
 import Noize from '@/app/assets/images/Noize'
+import { Parallax } from 'react-scroll-parallax'
 
 const BottomBanner = () => {
 	return (
@@ -51,20 +52,28 @@ const BottomBanner = () => {
 					</div>
 				</div>
 				<div className='max-w-[70vw] 2xl:max-w-3xl relative z-10'>
-					<Title
-						className='-left-5 top-[60%] z-10'
-						variant='h3-vertical-label'
+					<Parallax
+						translateY={[50, -50]}
+						className='absolute -left-5 top-[60%] z-10 w-11 h-[300px]'
 					>
-						Backend Developer
-					</Title>
+						<Title variant='h3-vertical-label'>
+							Backend Developer
+						</Title>
+					</Parallax>
 					<img src={bottomBannerImage.src} alt='Bottom Banner' />
-					<NestedCircles
-						count={7}
-						radius={500}
+					<Parallax
+						scale={[0.2, 1.4]}
 						className='absolute -top-[10%] right-[50%] opacity-20 -z-10'
-					/>
+					>
+						<NestedCircles count={7} radius={500} />
+					</Parallax>
+					<Parallax
+						translateY={[-100, 100]}
+						className='absolute -left-[10%] top-[50%] w-[320px] h-[320px] -z-10'
+					>
+						<BasicCircle />
+					</Parallax>
 					<LinesShape className='-right-24 top-[30%] -rotate-45 -scale-x-100' />
-					<BasicCircle className='-left-[10%] top-[50%]' />
 					<Rectangle className='bottom-0 right-0 w-[10%] h-[20%]' />
 					<Noize className='top-[40%] -left-[30%]' />
 				</div>

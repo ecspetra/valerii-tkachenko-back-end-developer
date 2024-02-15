@@ -8,6 +8,7 @@ import Rectangle from '@/app/assets/images/Rectangle'
 import Trees from '@/app/assets/images/Trees'
 import BasicCircle from '@/app/assets/images/BasicCircle'
 import Noize from '@/app/assets/images/Noize'
+import { Parallax } from 'react-scroll-parallax'
 
 const Skills = () => (
 	<div
@@ -19,24 +20,46 @@ const Skills = () => (
 		<div className='container max-w-6xl mx-auto w-full px-6'>
 			<div className='relative flex justify-between items-end'>
 				<div className='w-full relative max-w-[40%] pr-24 -mb-40'>
+					<Parallax translateY={[50, -50]}>
+						<img src={skillsImageOne.src} alt='Skills' />
+					</Parallax>
 					<NestedCircles
 						count={4}
 						radius={300}
 						className='absolute -top-[60%] left-[30%] opacity-20 -z-10'
 					/>
-					<img src={skillsImageOne.src} alt='Skills' />
 					<LinesShape className='-left-24 top-[30%] rotate-45' />
 					<BasicCircle className='left-[10%] -bottom-[10%]' />
 					<Noize className='-top-[30%] left-[10%]' />
 				</div>
 				<div className='w-full max-w-[60%] relative z-10'>
-					<Title variant='h2' className='!mb-40 relative'>
-						Tech Stack
-						<Trees className='w-[50%] top-1/2 -translate-y-1/2 -left-[80%]' />
+					<div className='mb-40 relative'>
+						<Parallax translateX={[-50, 0]} scale={[1.5, 1]}>
+							<Title variant='h2' className='relative'>
+								Tech Stack
+							</Title>
+						</Parallax>
+						<Parallax
+							translateX={[50, -50]}
+							className='absolute -bottom-12 left-[40%] w-[400px] h-[300px] -z-10 overflow-hidden'
+						>
+							<Parallax
+								scale={[1, 2]}
+								className='w-full h-full bg-[url("../../public/assets/images/background-image-4.jpg")] bg-cover bg-center bg-no-repeat -z-10'
+							/>
+						</Parallax>
+						<Parallax
+							translateY={[50, -50]}
+							className='w-[300px] h-[350px] absolute top-1/2 -translate-y-1/2 -left-[80%]'
+						>
+							<Trees />
+						</Parallax>
 						<Rectangle className='-bottom-2 left-[35%] w-[220px] h-[100px]' />
-						<div className='absolute -bottom-12 left-[40%] w-[500px] h-[400px] bg-[url("../../public/assets/images/background-image-4.jpg")] bg-cover bg-center bg-no-repeat -z-10' />
-					</Title>
-					<div className='flex flex-wrap justify-start items-start gap-10'>
+					</div>
+					<Parallax
+						translateY={[20, -20]}
+						className='flex flex-wrap justify-start items-start gap-10'
+					>
 						{SKILLS_LIST.map((item, idx) => (
 							<Title
 								key={idx}
@@ -46,7 +69,7 @@ const Skills = () => (
 								{item}
 							</Title>
 						))}
-					</div>
+					</Parallax>
 				</div>
 			</div>
 		</div>

@@ -4,6 +4,9 @@ import Tag from '@/components/Tag'
 import BackgroundStraightLine from '@/app/assets/images/BackgroundStraightLine'
 import NestedCircles from '@/app/assets/images/NestedCircles'
 import classNames from 'classnames'
+import summaryImageOne from '../../../../public/assets/images/11.jpg'
+import Rectangle from '@/app/assets/images/Rectangle'
+import { Parallax } from 'react-scroll-parallax'
 
 type ExperienceItemType = {
 	company: string
@@ -34,8 +37,13 @@ const ExperienceItem: FC<PropsType> = ({
 	idx,
 	isEven,
 }) => (
-	<div className='group w-full mb-8 pb-8 2xl:mb-16 2xl:pb-16 last:mb-0 last:pb-0 flex justify-between items-center'>
-		<div
+	<Parallax
+		translateY={[50, -10]}
+		opacity={[0.2, 1]}
+		className='group w-full mb-8 pb-8 2xl:mb-16 2xl:pb-16 last:mb-0 last:pb-0 flex justify-between items-center'
+	>
+		<Parallax
+			translateY={[100, -10]}
 			className={classNames(
 				'w-full max-w-[40%] px-24',
 				isEven ? 'text-right order-1' : 'text-left order-2'
@@ -47,7 +55,7 @@ const ExperienceItem: FC<PropsType> = ({
 			</Title>
 			<p className='text-dark-text-color'>{country}</p>
 			<p className='text-dark-text-color'>{date}</p>
-		</div>
+		</Parallax>
 		<div
 			className={classNames(
 				'relative duration-300 group-hover:border-main-color w-full max-w-[60%] p-12 border-4 border-main-color/20',
@@ -70,14 +78,15 @@ const ExperienceItem: FC<PropsType> = ({
 				className='-right-8 top-6 z-0'
 				isHorizontal
 			/>
-			<NestedCircles
-				count={4}
-				radius={100}
+			<Parallax
+				scale={[0.5, 1.7]}
 				className={classNames(
 					'absolute -top-24 opacity-20 -z-10',
 					isEven ? '-left-16' : '-right-16'
 				)}
-			/>
+			>
+				<NestedCircles count={4} radius={100} />
+			</Parallax>
 			<Title
 				variant='h3'
 				className='w-fit mb-10 !text-main-color border-b border-border-color'
@@ -102,7 +111,7 @@ const ExperienceItem: FC<PropsType> = ({
 				))}
 			</p>
 		</div>
-	</div>
+	</Parallax>
 )
 
 export default ExperienceItem

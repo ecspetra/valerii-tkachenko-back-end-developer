@@ -2,6 +2,8 @@ import Title from '@/app/components/Title'
 import BackgroundStraightLine from '@/app/assets/images/BackgroundStraightLine'
 import { EXPERIENCE_LIST } from '@/constants/experienceList'
 import ExperienceItem from '@/components/Experience/ExperienceItem'
+import Rectangle from '@/app/assets/images/Rectangle'
+import { Parallax } from 'react-scroll-parallax'
 
 const Experience = () => {
 	return (
@@ -11,9 +13,17 @@ const Experience = () => {
 		>
 			<BackgroundStraightLine className='-top-40 left-1/2 -translate-x-1/2 z-0' />
 			<div className='container max-w-6xl mx-auto w-full px-6 relative z-10'>
-				<Title className='text-center !mb-40' variant='h2'>
-					Experience
-				</Title>
+				<div className='relative mb-40'>
+					<Title className='text-center' variant='h2'>
+						Experience
+					</Title>
+					<Parallax
+						scaleX={[0, 1]}
+						className='absolute -bottom-2 left-[35%] w-[220px] h-[100px] -z-10'
+					>
+						<Rectangle className='w-full h-full' />
+					</Parallax>
+				</div>
 				<div>
 					{EXPERIENCE_LIST.map((item, idx) => (
 						<ExperienceItem
