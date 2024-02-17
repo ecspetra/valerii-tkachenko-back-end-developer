@@ -13,7 +13,7 @@ import { Parallax } from 'react-scroll-parallax'
 
 const BottomBanner = () => {
 	return (
-		<div className='relative w-screen min-h-screen' id='top-banner'>
+		<div className='relative w-screen min-h-screen' id='cv'>
 			<div className='absolute bottom-0 right-0 w-[40%] h-[90%] max-h-screen opacity-40 bg-[url("../../public/assets/images/background-image-6.jpg")] bg-cover bg-center bg-no-repeat' />
 			<div className='container mx-auto w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center px-6 pb-40'>
 				<BackgroundStraightLine className='-top-60 right-[54%]' />

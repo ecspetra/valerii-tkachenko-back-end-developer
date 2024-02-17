@@ -4,7 +4,7 @@ import Tag from '@/components/Tag'
 import BackgroundStraightLine from '@/app/assets/images/BackgroundStraightLine'
 import NestedCircles from '@/app/assets/images/NestedCircles'
 import classNames from 'classnames'
-import summaryImageOne from '../../../../public/assets/images/11.jpg'
+import summaryImageOne from '../../../../public/assets/images/summary-image-1.jpg'
 import Rectangle from '@/app/assets/images/Rectangle'
 import { Parallax } from 'react-scroll-parallax'
 

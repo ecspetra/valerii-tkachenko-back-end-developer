@@ -12,7 +12,7 @@ const Mountains: FC<PropsType> = ({ className }) => {
 			shapeRendering='geometricPrecision'
 			textRendering='geometricPrecision'
 			viewBox='0 0 550 120'
-			className={classNames('absolute -z-10 opacity-15', className)}
+			className={classNames('absolute -z-20 opacity-15', className)}
 		>
 			<path
 				fill='none'

@@ -4,17 +4,19 @@ import classNames from 'classnames'
 type PropsType = {
 	className?: string
 	isHorizontal?: boolean
+	isLargeHeight?: boolean
 }
 
 const BackgroundStraightLine: FC<PropsType> = ({
 	className,
 	isHorizontal = false,
+	isLargeHeight = false,
 }) => {
 	return (
 		<svg
 			className={classNames(`absolute`, className)}
 			width={isHorizontal ? '100%' : '1'}
-			height={isHorizontal ? '1' : '100%'}
+			height={isHorizontal ? '1' : isLargeHeight ? '200%' : '100%'}
 			viewBox='0 0 100% 100%'
 			xmlns='http://www.w3.org/2000/svg'
 		>

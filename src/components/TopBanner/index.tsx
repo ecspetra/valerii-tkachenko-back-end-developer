@@ -15,7 +15,7 @@ const TopBanner = () => {
 			className='relative w-screen min-h-screen overflow-hidden'
 			id='top-banner'
 		>
-			<div className='absolute top-0 left-0 w-[40%] h-full max-h-screen opacity-50 bg-[url("../../public/assets/images/background-image-1.jpg")] bg-cover bg-center bg-no-repeat' />
+			<div className='absolute top-0 left-0 w-[40%] h-full max-h-screen opacity-40 bg-[url("../../public/assets/images/background-image-1.jpg")] bg-cover bg-center bg-no-repeat' />
 			<NestedCircles
 				count={3}
 				radius={800}
