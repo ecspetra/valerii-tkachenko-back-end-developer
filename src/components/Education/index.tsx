@@ -26,7 +26,7 @@ const Education = () => (
 					</Title>
 				</Parallax>
 				<Parallax
-					translateX={[-50, 50]}
+					translateX={[-20, 20]}
 					className='absolute -bottom-12 left-[20%] w-[400px] h-[300px] -z-10 overflow-hidden'
 				>
 					<Parallax

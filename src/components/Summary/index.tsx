@@ -29,11 +29,12 @@ const Summary = () => (
 		>
 			<Building />
 		</Parallax>
-		<NestedCircles
-			count={5}
-			radius={700}
+		<Parallax
+			rotate={[-160, 100]}
 			className='absolute top-[60%] -right-[10%] opacity-20 -z-10'
-		/>
+		>
+			<NestedCircles count={5} radius={700} isShowSmallCircles />
+		</Parallax>
 		<BackgroundStraightLine className='left-[30%] top-0' />
 		<BackgroundStraightLine className='top-[70%] rotate-180' isHorizontal />
 		<Parallax translateY={[50, -50]} className='w-full max-w-4xl mx-auto'>

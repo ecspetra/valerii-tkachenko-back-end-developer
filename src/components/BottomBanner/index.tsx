@@ -63,9 +63,14 @@ const BottomBanner = () => {
 					<img src={bottomBannerImage.src} alt='Bottom Banner' />
 					<Parallax
 						scale={[0.2, 1.4]}
+						rotate={[-160, 100]}
 						className='absolute -top-[10%] right-[50%] opacity-20 -z-10'
 					>
-						<NestedCircles count={7} radius={500} />
+						<NestedCircles
+							count={7}
+							radius={500}
+							isShowSmallCircles
+						/>
 					</Parallax>
 					<Parallax
 						translateY={[-100, 100]}

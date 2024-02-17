@@ -7,7 +7,6 @@ import LinesShape from '@/app/assets/images/LinesShape'
 import Rectangle from '@/app/assets/images/Rectangle'
 import BasicCircle from '@/app/assets/images/BasicCircle'
 import Noize from '@/app/assets/images/Noize'
-import summaryImageTwo from '../../../public/assets/images/background-image-3.jpg'
 import { Parallax } from 'react-scroll-parallax'
 
 const TopBanner = () => {
@@ -16,7 +15,7 @@ const TopBanner = () => {
 			className='relative w-screen min-h-screen overflow-hidden'
 			id='top-banner'
 		>
-			<div className='absolute top-0 left-0 w-[40%] h-full max-h-screen opacity-40 bg-[url("../../public/assets/images/background-image-1.jpg")] bg-cover bg-center bg-no-repeat' />
+			<div className='absolute top-0 left-0 w-[40%] h-full max-h-screen opacity-50 bg-[url("../../public/assets/images/background-image-1.jpg")] bg-cover bg-center bg-no-repeat' />
 			<NestedCircles
 				count={3}
 				radius={800}
@@ -38,9 +37,14 @@ const TopBanner = () => {
 					</Parallax>
 					<Parallax
 						scale={[1.4, 1]}
+						rotate={[-160, 100]}
 						className='absolute -top-[10%] left-[50%] opacity-20 -z-10'
 					>
-						<NestedCircles count={7} radius={500} />
+						<NestedCircles
+							count={7}
+							radius={500}
+							isShowSmallCircles
+						/>
 					</Parallax>
 					<img src={topBannerImage.src} alt='Top Banner' />
 					<LinesShape className='-left-24 top-[30%] rotate-45' />
