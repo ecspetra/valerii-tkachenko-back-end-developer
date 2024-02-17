@@ -9,6 +9,7 @@ import Trees from '@/app/assets/images/Trees'
 import BasicCircle from '@/app/assets/images/BasicCircle'
 import Noize from '@/app/assets/images/Noize'
 import { Parallax } from 'react-scroll-parallax'
+import Sun from '@/app/assets/images/Sun'
 
 const Skills = () => (
 	<div
@@ -20,7 +21,7 @@ const Skills = () => (
 		<div className='container max-w-6xl mx-auto w-full px-6'>
 			<div className='relative flex justify-between items-end'>
 				<div className='w-full relative max-w-[40%] pr-24 -mb-40'>
-					<Parallax translateY={[50, -50]}>
+					<Parallax translateY={[50, -50]} className='relative z-10'>
 						<img src={skillsImageOne.src} alt='Skills' />
 					</Parallax>
 					<NestedCircles
@@ -29,7 +30,15 @@ const Skills = () => (
 						className='absolute -top-[60%] left-[30%] opacity-20 -z-10'
 					/>
 					<LinesShape className='-left-24 top-[30%] rotate-45' />
-					<BasicCircle className='left-[10%] -bottom-[10%]' />
+					<div className='w-[320px] h-[320px] absolute left-[10%] -bottom-[10%]'>
+						<BasicCircle className='left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2' />
+						<Parallax
+							scale={[0.5, 1.5]}
+							className='w-[320px] h-[320px]'
+						>
+							<Sun className='w-[320px] h-[320px]' />
+						</Parallax>
+					</div>
 					<Noize className='-top-[30%] left-[10%]' />
 				</div>
 				<div className='w-full max-w-[60%] relative z-10'>

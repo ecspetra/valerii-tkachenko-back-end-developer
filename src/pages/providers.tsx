@@ -1,14 +1,14 @@
 'use client'
 
+import { ReactNode } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import { useMediaQuery } from 'react-responsive'
 
-export const Providers = ({ children }: { children: React.ReactNode }) => {
-	const userPrefersReducedMotion = {
-		query: '(prefers-reduced-motion)',
-	}
+export const Providers = ({ children }: { children: ReactNode }) => {
+	const isSmallScreen = useMediaQuery({ query: '(max-width: 1024px)' })
 
 	return (
-		<ParallaxProvider isDisabled={userPrefersReducedMotion}>
+		<ParallaxProvider isDisabled={isSmallScreen}>
 			{children}
 		</ParallaxProvider>
 	)
