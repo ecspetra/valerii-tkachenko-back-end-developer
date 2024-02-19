@@ -18,46 +18,36 @@ const BottomBanner = () => {
 			<div className='container mx-auto w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center px-6 pb-40'>
 				<BackgroundStraightLine className='-top-60 right-[54%]' />
 				<div className='relative z-20 w-full max-w-md lg:max-w-xl'>
-					<Title className='relative w-full !text-[130px] whitespace-nowrap'>
-						<span className='block'>Contact me</span>
-						<span className='block'>for collaboration</span>
-					</Title>
+					<div className='relative'>
+						<Parallax translateX={[5, -5]}>
+							<Title className='!mb-0'>Valerii</Title>
+						</Parallax>
+						<Parallax translateX={[-5, 5]}>
+							<Title className='ml-[5%]'>Tkachenko</Title>
+						</Parallax>
+						<BasicCircle className='-left-24 -top-16' isDarkColor />
+					</div>
 					<Title
 						variant='h2'
 						className='!mb-40 !text-5xl !text-main-color'
 					>
 						<span className='block w-fit mb-2 pb-2 border-b border-border-color'>
-							I hope to hear
+							Backend
 						</span>
 						<span className='block w-fit mb-2 pb-2 border-b border-border-color'>
-							from you soon
+							Developer
 						</span>
 					</Title>
 					<Button className='mb-20'>Download CV</Button>
-					<Contacts isLeftAligned />
-					<div className='flex flex-col sm:flex-row items-center justify-start'>
-						{CONTACTS_LIST.map((item, idx) => {
-							if (idx !== 0)
-								return (
-									<p key={idx}>
-										{item.value}
-										{idx !== CONTACTS_LIST.length - 1 && (
-											<span className='mx-4 hidden sm:inline-block text-dark-text-color'>
-												|
-											</span>
-										)}
-									</p>
-								)
-						})}
-					</div>
 				</div>
 				<div className='max-w-[70vw] 2xl:max-w-3xl relative z-10'>
 					<Parallax
 						translateY={[50, -50]}
-						className='absolute -left-5 top-[60%] z-10 w-11 h-[300px]'
+						className='absolute -left-5 top-[60%] z-10 w-11 h-[350px]'
 					>
 						<Title variant='h3-vertical-label'>
-							Backend Developer
+							<span className='text-main-color'>6+ years</span> of
+							experience
 						</Title>
 					</Parallax>
 					<img src={bottomBannerImage.src} alt='Bottom Banner' />

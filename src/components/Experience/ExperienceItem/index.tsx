@@ -53,7 +53,7 @@ const ExperienceItem: FC<PropsType> = ({
 				{company}
 				<span className='block !font-extralight'>{branch}</span>
 			</Title>
-			<p className='text-dark-text-color'>{country}</p>
+			<p>{country}</p>
 			<p className='text-dark-text-color'>{date}</p>
 		</Parallax>
 		<div

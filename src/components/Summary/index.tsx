@@ -25,13 +25,13 @@ const Summary = () => (
 		/>
 		<Parallax
 			translateY={[50, -100]}
-			className='absolute w-[200px] h-[300px] bottom-0 right-[25%]'
+			className='absolute w-[200px] h-[300px] bottom-0 right-[15%] 2xl:right-[25%]'
 		>
 			<Building />
 		</Parallax>
 		<Parallax
 			rotate={[-160, 100]}
-			className='absolute top-[60%] -right-[10%] opacity-20 -z-10'
+			className='absolute top-[60%] -right-[30%] 2xl:-right-[10%] opacity-20 -z-10'
 		>
 			<NestedCircles count={5} radius={700} isShowSmallCircles />
 		</Parallax>
@@ -46,7 +46,7 @@ const Summary = () => (
 					<NestedCircles count={7} radius={200} />
 				</Parallax>
 				<Title variant='h2'>About me</Title>
-				<p className='pl-20 mb-8 text-2xl font-normal'>
+				<p className='pl-20 mb-8 text-2xl font-normal relative z-20'>
 					I offer{' '}
 					<span className='text-main-color border-b border-border-color'>
 						6 years of hands-on experience
@@ -83,7 +83,7 @@ const Summary = () => (
 		</Parallax>
 		<Parallax
 			translateY={[50, -50]}
-			className='relative mb-80 w-full max-w-4xl mx-auto'
+			className='relative mb-80 w-full max-w-3xl 2xl:max-w-4xl mx-auto'
 		>
 			<Title
 				className='right-[58%] top-[55%] z-10'
@@ -93,13 +93,13 @@ const Summary = () => (
 			</Title>
 			<Parallax
 				translateY={[10, -10]}
-				className='absolute max-w-[80%] -bottom-60 left-0 w-full'
+				className='absolute max-w-[80%] -bottom-40 2xl:-bottom-60 left-0 w-full'
 			>
 				<img src={summaryImageTwo.src} alt='Summary' />
 			</Parallax>
 			<Parallax
 				translateX={[10, -10]}
-				className='relative ml-auto max-w-[60%] h-[500px] overflow-hidden'
+				className='relative ml-auto max-w-[60%] h-[400px] 2xl:h-[500px] overflow-hidden'
 			>
 				<img src={summaryImageOne.src} alt='Summary' />
 				<Rectangle className='-bottom-12 left-[40%] w-[20%] h-[30%]' />

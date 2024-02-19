@@ -21,6 +21,11 @@ const config: Config = {
 					'rgb(var(--dark-text-color) / <alpha-value>)',
 				'border-color': 'rgb(var(--border-color) / <alpha-value>)',
 			},
+			screens: {
+				'wide-screen-with-small-height': {
+					raw: '(max-height: 800px) and (min-width:1536px)',
+				},
+			},
 		},
 	},
 	plugins: [],
