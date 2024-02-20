@@ -25,6 +25,9 @@ const config: Config = {
 				'wide-screen-with-small-height': {
 					raw: '(max-height: 1080px) and (min-width:1281px)',
 				},
+				'ipad-pro': {
+					raw: '(min-height: 1366px) and (min-width:1024px)',
+				},
 			},
 		},
 	},

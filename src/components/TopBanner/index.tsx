@@ -15,7 +15,7 @@ const TopBanner = () => {
 
 	return (
 		<div
-			className='relative w-screen lg:min-h-screen overflow-hidden'
+			className='relative w-screen lg:min-h-screen ipad-pro:min-h-full overflow-hidden'
 			id='top-banner'
 		>
 			<div className='hidden 2xl:block absolute top-0 left-0 w-[60vh] h-screen opacity-40 bg-[url("../../public/assets/images/background-image-1.jpg")] bg-cover bg-center bg-no-repeat' />
@@ -31,7 +31,7 @@ const TopBanner = () => {
 					className='top-[90%] hidden lg:block'
 					isHorizontal
 				/>
-				<div className='w-full sm:w-[70%] h-full lg:w-auto lg:h-screen relative z-10 self-start mb-12 sm:mb-16 lg:mb-0'>
+				<div className='w-full sm:w-[70%] h-full lg:w-auto lg:h-screen ipad-pro:h-auto relative z-10 self-start mb-12 sm:mb-16 lg:mb-0'>
 					<Parallax
 						translateY={[50, -50]}
 						className='absolute -right-5 top-[20%] lg:top-[50%] xl:top-[60%] z-10 w-11 h-[300px]'

@@ -15,13 +15,13 @@ const BottomBanner = () => {
 
 	return (
 		<div
-			className='relative w-screen lg:min-h-screen overflow-hidden lg:overflow-visible'
+			className='relative w-screen lg:min-h-screen ipad-pro:min-h-full overflow-hidden lg:overflow-visible'
 			id='cv'
 		>
 			<div className='hidden 2xl:block absolute bottom-0 right-0 w-[60vh] h-[90%] max-h-screen opacity-40 bg-[url("../../public/assets/images/background-image-6.jpg")] bg-cover bg-center bg-no-repeat' />
 			<div className='container mx-auto w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center lg:gap-12 xl:gap-36 px-6 py-14 sm:py-20 lg:py-0'>
 				<BackgroundStraightLine className='hidden lg:block -top-20 2xl:-top-60 right-1/2 -translate-x-1/2 lg:translate-x-0 lg:right-[54%]' />
-				<div className='relative z-20 w-full lg:pt-24 xl:pt-16 lg:pb-40 lg:max-w-md lg:max-w-xl order-2 lg:order-1'>
+				<div className='relative z-20 w-full lg:pt-24 xl:pt-16 lg:pb-40 lg:max-w-md xl:max-w-xl order-2 lg:order-1'>
 					<div className='relative'>
 						<Parallax translateX={[5, -5]}>
 							<Title className='!mb-0'>Valerii</Title>
@@ -45,7 +45,7 @@ const BottomBanner = () => {
 					</Title>
 					<Button>Download CV</Button>
 				</div>
-				<div className='w-full sm:w-[70%] lg:max-w-[768px] h-full lg:w-auto lg:h-screen relative z-10 self-start mb-12 sm:mb-16 lg:mb-0 order-1 lg:order-2'>
+				<div className='w-full sm:w-[70%] lg:max-w-[768px] h-full lg:w-auto lg:h-screen ipad-pro:h-auto relative z-10 self-start mb-12 sm:mb-16 lg:mb-0 order-1 lg:order-2'>
 					<Parallax
 						translateY={[50, -50]}
 						className='absolute -left-5 top-[30%] sm:top-[40%] 2xl:top-[50%] z-10 w-11 h-[350px]'

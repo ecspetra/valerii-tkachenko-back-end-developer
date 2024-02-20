@@ -24,8 +24,8 @@ body.scroll-blocked {
 }
 
 #header-menu.hidden-menu {
-  top: -100%;
-  height: auto;
+  top: -120%;
+  height: 0;
 }
 
 #header-menu {
