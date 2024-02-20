@@ -9,12 +9,12 @@ type PropsType = {
 const Footer: FC<PropsType> = ({ className }) => (
 	<footer
 		className={classNames(
-			'relative w-screen px-4 py-20 text-center text-sm ',
+			'relative w-screen px-4 pt-8 pb-16 text-center text-sm',
 			className
 		)}
 	>
 		<BackgroundStraightLine
-			className='-top-20 left-1/2 -translate-x-1/2 z-0'
+			className='-top-10 left-1/2 -translate-x-1/2 z-0'
 			isLargeHeight
 		/>
 		<div className='relative z-10'>

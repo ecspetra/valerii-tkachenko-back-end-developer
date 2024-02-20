@@ -23,7 +23,7 @@ const config: Config = {
 			},
 			screens: {
 				'wide-screen-with-small-height': {
-					raw: '(max-height: 800px) and (min-width:1536px)',
+					raw: '(max-height: 1080px) and (min-width:1281px)',
 				},
 			},
 		},

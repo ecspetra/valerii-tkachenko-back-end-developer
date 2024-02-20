@@ -14,7 +14,7 @@ const Title: FC<PropsType> = ({ children, className, variant = 'h1' }) => {
 				return (
 					<h1
 						className={classNames(
-							'text-9xl wide-screen-with-small-height:text-9xl 2xl:text-[160px] leading-none font-semibold text-white mb-16',
+							'text-8xl wide-screen-with-small-height:text-9xl xl:text-9xl 2xl:text-[160px] leading-none font-semibold text-white mb-16',
 							className
 						)}
 					>
@@ -36,7 +36,7 @@ const Title: FC<PropsType> = ({ children, className, variant = 'h1' }) => {
 				return (
 					<h3
 						className={classNames(
-							'text-3xl font-normal text-white',
+							'text-2xl wide-screen-with-small-height:text-2xl 2xl:text-3xl font-normal text-white',
 							className
 						)}
 					>
@@ -47,7 +47,7 @@ const Title: FC<PropsType> = ({ children, className, variant = 'h1' }) => {
 				return (
 					<h3
 						className={classNames(
-							'text-2xl wide-screen-with-small-height:text-2xl 2xl:text-3xl font-semibold bg-white w-fit text-background-color px-1 py-2 [writing-mode:vertical-lr] rotate-180 absolute',
+							'text-xl xl:text-2xl wide-screen-with-small-height:text-2xl 2xl:text-3xl font-semibold bg-white w-fit text-background-color px-1 py-2 [writing-mode:vertical-lr] rotate-180 absolute',
 							className
 						)}
 					>
@@ -58,7 +58,7 @@ const Title: FC<PropsType> = ({ children, className, variant = 'h1' }) => {
 				return (
 					<h3
 						className={classNames(
-							'text-3xl font-semibold bg-white w-fit text-background-color px-2 py-1 absolute',
+							'text-xl xl:text-2xl wide-screen-with-small-height:text-2xl 2xl:text-3xl font-semibold bg-white w-fit text-background-color px-2 py-1 absolute',
 							className
 						)}
 					>

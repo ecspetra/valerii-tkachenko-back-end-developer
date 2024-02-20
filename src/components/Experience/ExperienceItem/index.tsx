@@ -49,7 +49,7 @@ const ExperienceItem: FC<PropsType> = ({
 				isEven ? 'text-right order-1' : 'text-left order-2'
 			)}
 		>
-			<Title variant='h3' className='mb-8'>
+			<Title variant='h3' className='mb-6 2xl:mb-8'>
 				{company}
 				<span className='block !font-extralight'>{branch}</span>
 			</Title>
@@ -58,7 +58,7 @@ const ExperienceItem: FC<PropsType> = ({
 		</Parallax>
 		<div
 			className={classNames(
-				'relative duration-300 group-hover:border-main-color w-full max-w-[60%] p-12 border-4 border-main-color/20',
+				'relative duration-300 group-hover:border-main-color w-full max-w-[60%] p-6 2xl:p-12 border-4 border-main-color/20',
 				isEven ? 'order-2' : 'order-1'
 			)}
 		>
@@ -89,11 +89,11 @@ const ExperienceItem: FC<PropsType> = ({
 			</Parallax>
 			<Title
 				variant='h3'
-				className='w-fit mb-10 !text-main-color border-b border-border-color'
+				className='w-fit mb-6 2xl:mb-10 !text-main-color border-b border-border-color'
 			>
 				{job}
 			</Title>
-			<ul className='mb-12'>
+			<ul className='mb-6 2xl:mb-2'>
 				{responsibilities.map((item, idx) => (
 					<li
 						key={idx}

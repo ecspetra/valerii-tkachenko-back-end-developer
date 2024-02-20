@@ -23,7 +23,7 @@ const Home = () => {
 			/>
 			<Providers>
 				<main
-					className={`flex min-h-screen flex-col items-center justify-between ${outfitFont.variable} font-sans font-extralight leading-normal tracking-wide text-lg text-main-text-color`}
+					className={`flex min-h-screen flex-col items-center justify-between ${outfitFont.variable} font-sans font-extralight leading-normal tracking-wide text-base xl:text-lg text-main-text-color`}
 				>
 					<TopBanner />
 					<Summary />

@@ -3,7 +3,7 @@ import { SOCIAL_LINKS_LIST } from '@/constants/contactsList'
 
 const Contacts = () => {
 	return (
-		<div className='flex items-start gap-16 justify-center'>
+		<div className='flex items-start gap-16 justify-center relative z-20'>
 			{SOCIAL_LINKS_LIST.map((item, idx) => (
 				<Button
 					key={idx}

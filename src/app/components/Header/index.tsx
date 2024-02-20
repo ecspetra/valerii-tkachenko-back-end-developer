@@ -15,7 +15,7 @@ const Header: FC<PropsType> = ({ className }) => {
 
 	const linkClassNames = (anchor: string) =>
 		classNames(
-			'relative duration-300 p-4 group border-b border-transparent hover:border-b-border-color',
+			'relative duration-300 p-2 2xl:p-4 group border-b border-transparent hover:border-b-border-color',
 			{
 				'text-main-color border-b-border-color':
 					anchor.toLowerCase() === activeAnchor && isScrolled,
@@ -34,13 +34,13 @@ const Header: FC<PropsType> = ({ className }) => {
 	return (
 		<header
 			className={classNames(
-				'w-full p-8 fixed top-0 flex justify-between items-center z-50 text-white',
+				'w-full px-4 py-2 2xl:p-8 fixed top-0 flex justify-between items-center z-50 text-white',
 				className
 			)}
 		>
 			<a
 				href={LINK_TO_TOP}
-				className='font-normal text-xl leading-none duration-300 hover:text-main-color'
+				className='font-normal text-base 2xl:text-xl leading-none duration-300 hover:text-main-color'
 			>
 				Valerii<span className='block ml-2'>Tkachenko</span>
 			</a>
