@@ -45,7 +45,7 @@ const BottomBanner = () => {
 					</Title>
 					<Button>Download CV</Button>
 				</div>
-				<div className='w-full sm:w-[70%] lg:max-w-[768px] h-full lg:w-auto lg:h-screen ipad-pro:h-auto relative z-10 self-start mb-12 sm:mb-16 lg:mb-0 order-1 lg:order-2'>
+				<div className='w-full sm:w-[70%] h-full lg:w-auto lg:h-screen ipad-pro:h-auto relative z-10 self-start mb-12 sm:mb-16 lg:mb-0 order-1 lg:order-2'>
 					<Parallax
 						translateY={[50, -50]}
 						className='absolute -left-5 top-[30%] sm:top-[40%] 2xl:top-[50%] z-10 w-11 h-[350px]'
