@@ -4,9 +4,15 @@ interface PropsType {
 	count: number
 	radius: number
 	className?: string
+	isShowSmallCircles?: boolean
 }
 
-const NestedCircles: FC<PropsType> = ({ count, radius, className }) => {
+const NestedCircles: FC<PropsType> = ({
+	count,
+	radius,
+	className,
+	isShowSmallCircles = false,
+}) => {
 	const innerRadiusStep = 24
 	const circles = []
 
@@ -33,8 +39,28 @@ const NestedCircles: FC<PropsType> = ({ count, radius, className }) => {
 			className={className}
 			width={radius * 2}
 			height={radius * 2}
-			viewBox={`0 0 ${radius * 2 + 4} ${radius * 2 + 4}`}
+			viewBox={`0 0 ${radius * 2 + 40} ${radius * 2 + 40}`}
 		>
+			{isShowSmallCircles && (
+				<>
+					<circle
+						cx={radius * 2 - radius / 20}
+						cy={radius}
+						r={radius / 10}
+						fill='transparent'
+						stroke='white'
+						strokeWidth='1'
+					/>
+					<circle
+						cx={radius}
+						cy={radius * 2 - radius / 4}
+						r={radius / 20}
+						fill='transparent'
+						stroke='white'
+						strokeWidth='1'
+					/>
+				</>
+			)}
 			{circles}
 		</svg>
 	)

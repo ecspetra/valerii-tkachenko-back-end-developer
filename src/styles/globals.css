@@ -4,18 +4,33 @@
 
 :root {
   --background-color: 12 10 9;
-  /*--main-color: 94 234 212;*/
-  /*--main-color: 251 146 60;*/
-  --main-color: 250 204 21;
+  --main-color: 191 210 0;
   --main-text-color: 214 211 209;
   --dark-text-color: 120 113 108;
   --border-color: 68 64 60;
 }
 
-body {
-  background: rgb(var(--background-color));
+html {
+  scroll-behavior: smooth;
 }
 
-.basic-button {
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
+body {
+  background: rgb(var(--background-color));
+  overflow-x: hidden;
+}
+
+body.scroll-blocked {
+  overflow-y: hidden;
+}
+
+#header-menu.hidden-menu {
+  top: -120%;
+  height: 0;
+}
+
+#header-menu {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: height 2s, top 1s;
 }

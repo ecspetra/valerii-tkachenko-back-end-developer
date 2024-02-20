@@ -21,6 +21,14 @@ const config: Config = {
 					'rgb(var(--dark-text-color) / <alpha-value>)',
 				'border-color': 'rgb(var(--border-color) / <alpha-value>)',
 			},
+			screens: {
+				'wide-screen-with-small-height': {
+					raw: '(max-height: 1080px) and (min-width:1281px)',
+				},
+				'ipad-pro': {
+					raw: '(min-height: 1366px) and (min-width:1024px)',
+				},
+			},
 		},
 	},
 	plugins: [],

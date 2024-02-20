@@ -7,6 +7,7 @@ import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
 import Education from '@/components/Education'
 import BottomBanner from '@/components/BottomBanner'
+import { Providers } from '@/pages/providers'
 
 const outfitFont = Outfit({
 	weight: ['100', '200', '300', '400', '500', '600'],
@@ -20,19 +21,21 @@ const Home = () => {
 			<Header
 				className={`${outfitFont.variable} font-sans text-main-text-color`}
 			/>
-			<main
-				className={`flex min-h-screen flex-col items-center justify-between ${outfitFont.variable} font-sans font-extralight leading-normal tracking-wide text-lg text-main-text-color`}
-			>
-				<TopBanner />
-				<Summary />
-				<Experience />
-				<Skills />
-				<Education />
-				<BottomBanner />
-			</main>
-			<Footer
-				className={`${outfitFont.variable} font-sans text-main-text-color`}
-			/>
+			<Providers>
+				<main
+					className={`flex min-h-screen flex-col items-center justify-between ${outfitFont.variable} font-sans font-extralight leading-normal tracking-wide text-base xl:text-lg text-main-text-color`}
+				>
+					<TopBanner />
+					<Summary />
+					<Experience />
+					<Skills />
+					<Education />
+					<BottomBanner />
+				</main>
+				<Footer
+					className={`${outfitFont.variable} font-sans text-main-text-color`}
+				/>
+			</Providers>
 		</>
 	)
 }
