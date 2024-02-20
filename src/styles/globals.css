@@ -4,11 +4,7 @@
 
 :root {
   --background-color: 12 10 9;
-  /*--main-color: 94 234 212;*/
-  /*--main-color: 250 204 21;*/
-  /*--main-color: 190 242 100;*/
   --main-color: 191 210 0;
-  /*--main-color: 245 158 11;*/
   --main-text-color: 214 211 209;
   --dark-text-color: 120 113 108;
   --border-color: 68 64 60;
@@ -28,12 +24,13 @@ body.scroll-blocked {
 }
 
 #header-menu.hidden-menu {
-  left: 100%;
-  width: 20vw;
+  top: -100%;
+  height: auto;
 }
 
 #header-menu {
-  left: 0;
+  top: 0;
   width: 100vw;
-  transition: width 2s, left 1s;
+  height: 100vh;
+  transition: height 2s, top 1s;
 }

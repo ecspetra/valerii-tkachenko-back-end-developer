@@ -14,7 +14,7 @@ const Title: FC<PropsType> = ({ children, className, variant = 'h1' }) => {
 				return (
 					<h1
 						className={classNames(
-							'text-8xl wide-screen-with-small-height:text-9xl xl:text-9xl 2xl:text-[160px] leading-none font-semibold text-white mb-16',
+							'text-5xl sm:text-8xl wide-screen-with-small-height:text-9xl xl:text-9xl 2xl:text-[160px] leading-none font-semibold text-white mb-16 text-center lg:text-left',
 							className
 						)}
 					>
@@ -25,7 +25,7 @@ const Title: FC<PropsType> = ({ children, className, variant = 'h1' }) => {
 				return (
 					<h2
 						className={classNames(
-							'text-7xl wide-screen-with-small-height:text-7xl 2xl:text-8xl font-medium text-white mb-16',
+							'text-5xl sm:text-7xl wide-screen-with-small-height:text-7xl 2xl:text-8xl font-medium text-white mb-8 sm:mb-16 text-center lg:text-left',
 							className
 						)}
 					>
@@ -36,7 +36,7 @@ const Title: FC<PropsType> = ({ children, className, variant = 'h1' }) => {
 				return (
 					<h3
 						className={classNames(
-							'text-2xl wide-screen-with-small-height:text-2xl 2xl:text-3xl font-normal text-white',
+							'text-lg sm:text-2xl wide-screen-with-small-height:text-2xl 2xl:text-3xl font-normal text-white',
 							className
 						)}
 					>

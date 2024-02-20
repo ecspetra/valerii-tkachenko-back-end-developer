@@ -9,16 +9,16 @@ type PropsType = {
 const Footer: FC<PropsType> = ({ className }) => (
 	<footer
 		className={classNames(
-			'relative w-screen px-4 pt-8 pb-16 text-center text-sm',
+			'relative w-screen px-4 py-12 sm:py-16 lg:pt-8 lg:pb-16 text-center text-sm border-t border-border-color lg:border-t-0',
 			className
 		)}
 	>
 		<BackgroundStraightLine
-			className='-top-10 left-1/2 -translate-x-1/2 z-0'
+			className='hidden lg:block -top-10 left-1/2 -translate-x-1/2 z-0'
 			isLargeHeight
 		/>
 		<div className='relative z-10'>
-			<p className='mb-2 font-extralight'>
+			<p className='mb-2 font-extralight text-xs sm:text-sm'>
 				Designed and developed by Yuliia Tkachenko, 2024
 			</p>
 			<a

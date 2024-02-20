@@ -15,9 +15,9 @@ const Header: FC<PropsType> = ({ className }) => {
 
 	const linkClassNames = (anchor: string) =>
 		classNames(
-			'relative duration-300 p-2 2xl:p-4 group border-b border-transparent hover:border-b-border-color',
+			'relative duration-300 pt-4 pl-4 pr-4 pb-2 lg:p-2 2xl:p-4 w-full md:w-auto text-background-color md:text-white group border-b border-transparent hover:border-b-border-color',
 			{
-				'text-main-color border-b-border-color':
+				'!text-main-color border-b-border-color':
 					anchor.toLowerCase() === activeAnchor && isScrolled,
 			}
 		)
@@ -34,13 +34,13 @@ const Header: FC<PropsType> = ({ className }) => {
 	return (
 		<header
 			className={classNames(
-				'w-full px-4 py-2 2xl:p-8 fixed top-0 flex justify-between items-center z-50 text-white',
+				'w-full px-4 py-2 2xl:p-4 fixed top-0 flex justify-between items-center z-50 text-white bg-background-color lg:bg-transparent',
 				className
 			)}
 		>
 			<a
 				href={LINK_TO_TOP}
-				className='font-normal text-base 2xl:text-xl leading-none duration-300 hover:text-main-color'
+				className='font-normal text-base 2xl:text-xl !leading-none duration-300 hover:text-main-color'
 			>
 				Valerii<span className='block ml-2'>Tkachenko</span>
 			</a>
@@ -51,7 +51,7 @@ const Header: FC<PropsType> = ({ className }) => {
 				/>
 				<ul
 					id='header-menu'
-					className='hidden-menu flex justify-end flex-col md:flex-row items-start md:items-center uppercase font-extrabold text-xs leading-none tracking-[2px] duration-1000 h-screen md:!w-auto md:h-fit fixed top-0 md:static'
+					className='hidden-menu px-4 py-12 md:px-0 md:py-0 flex justify-start md:justify-end flex-col md:flex-row items-start md:items-center uppercase font-semibold text-lg md:text-xs leading-none bg-white md:bg-transparent tracking-[2px] duration-1000 h-screen md:!w-auto md:h-fit fixed -top-full left-0 md:static'
 				>
 					{HEADER_ANCHORS.map(([key, value]) => (
 						<li key={key} className='w-full flex'>
