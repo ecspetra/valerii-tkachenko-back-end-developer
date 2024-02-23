@@ -64,7 +64,6 @@ export default function Document() {
 					property='og:image'
 					content='/assets/images/opengraph-image.png'
 				/>
-
 				<meta name='twitter:card' content='summary_large_image' />
 				<meta
 					property='twitter:domain'

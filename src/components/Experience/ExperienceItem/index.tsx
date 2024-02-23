@@ -39,7 +39,6 @@ const ExperienceItem: FC<PropsType> = ({
 }) => (
 	<Parallax
 		translateY={[50, -10]}
-		opacity={[0.2, 1]}
 		className='group mx-auto lg:mx-0 w-full max-w-2xl lg:max-w-full mb-16 lg:mb-8 pb-8 2xl:mb-16 2xl:pb-16 last:mb-0 last:pb-0 flex flex-col lg:flex-row justify-start lg:justify-between items-center'
 	>
 		<Parallax
