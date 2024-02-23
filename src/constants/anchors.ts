@@ -1,9 +1,9 @@
 export enum NavigationLinks {
-	'Summary' = '#summary',
-	'Experience' = '#experience',
-	'Skills' = '#skills',
-	'Education' = '#education',
-	'CV' = '#cv',
+	Summary = '#summary',
+	Experience = '#experience',
+	Skills = '#skills',
+	Education = '#education',
+	CV = '#cv',
 }
 
 export const LINK_TO_TOP = '#top-banner'

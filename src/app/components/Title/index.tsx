@@ -1,8 +1,8 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 import classNames from 'classnames'
 
 type PropsType = {
-	children: string
+	children: ReactNode
 	className?: string
 	variant?: 'h1' | 'h2' | 'h3' | 'h3-vertical-label' | 'h3-horizontal-label'
 }
