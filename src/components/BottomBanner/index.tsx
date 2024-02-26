@@ -6,9 +6,11 @@ import NestedCircles from '@/app/assets/images/NestedCircles'
 import LinesShape from '@/app/assets/images/LinesShape'
 import Rectangle from '@/app/assets/images/Rectangle'
 import BasicCircle from '@/app/assets/images/BasicCircle'
-import Noize from '@/app/assets/images/Noize'
+import Noise from '@/app/assets/images/Noise'
 import { Parallax } from 'react-scroll-parallax'
 import useDecreaseShapeSize from '@/hooks/useDecreaseShapeSize'
+import topBannerImage from '../../../public/assets/images/top-banner-image.jpg'
+import Image from 'next/image'
 
 const BottomBanner = () => {
 	const isDecreaseShapeSize = useDecreaseShapeSize()
@@ -19,7 +21,7 @@ const BottomBanner = () => {
 			id='cv'
 		>
 			<div className='hidden 2xl:block absolute bottom-0 right-0 w-[60vh] h-[90%] max-h-screen opacity-40 bg-[url("../../public/assets/images/background-image-6.jpg")] bg-cover bg-center bg-no-repeat' />
-			<div className='container mx-auto w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center lg:gap-12 xl:gap-36 px-6 py-14 sm:py-20 lg:py-0'>
+			<div className='container mx-auto w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center lg:gap-12 2xl:gap-36 px-6 py-14 sm:py-20 lg:py-0'>
 				<BackgroundStraightLine className='hidden lg:block -top-20 2xl:-top-60 right-1/2 -translate-x-1/2 lg:translate-x-0 lg:right-[54%]' />
 				<div className='relative z-20 w-full lg:pt-24 xl:pt-16 lg:pb-40 lg:max-w-md xl:max-w-xl order-2 lg:order-1'>
 					<div className='relative'>
@@ -45,20 +47,21 @@ const BottomBanner = () => {
 					</Title>
 					<Button>Download CV</Button>
 				</div>
-				<div className='w-full sm:w-[70%] h-full lg:w-auto lg:h-screen ipad-pro:h-auto relative z-10 self-start mb-12 sm:mb-16 lg:mb-0 order-1 lg:order-2'>
+				<div className='aspect-[2/3] max-w-[560px] 2xl:max-w-[768px] w-full sm:w-[70%] h-full lg:w-auto lg:h-screen ipad-pro:h-auto relative z-10 self-start mb-12 sm:mb-16 lg:mb-0 order-1 lg:order-2'>
 					<Parallax
 						translateY={[50, -50]}
-						className='absolute -left-5 top-[30%] sm:top-[40%] 2xl:top-[50%] z-10 w-11 h-[350px]'
+						className='absolute -left-5 top-[30%] sm:top-[50%] z-10 w-11 h-[350px]'
 					>
 						<Title variant='h3-vertical-label'>
 							<span className='text-main-color'>6+ years</span> of
 							experience
 						</Title>
 					</Parallax>
-					<img
-						src={bottomBannerImage.src}
-						alt='Bottom Banner'
+					<Image
 						className='max-h-full max-w-full'
+						src={bottomBannerImage}
+						alt='Bottom Banner'
+						loading='eager'
 					/>
 					<Parallax
 						scale={[0.2, 1.4]}
@@ -79,7 +82,7 @@ const BottomBanner = () => {
 					</Parallax>
 					<LinesShape className='left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-16 top-3 sm:top-0 -rotate-45 -scale-x-100' />
 					<Rectangle className='-top-2 -right-2 sm:-top-6 sm:-right-6 w-[10%] h-[20%]' />
-					<Noize className='top-[40%] -left-[30%]' />
+					<Noise className='top-[40%] -left-[30%]' />
 				</div>
 			</div>
 		</div>

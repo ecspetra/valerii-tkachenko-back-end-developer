@@ -2,9 +2,11 @@ import Title from '@/app/components/Title'
 import BackgroundStraightLine from '@/app/assets/images/BackgroundStraightLine'
 import Rectangle from '@/app/assets/images/Rectangle'
 import Mountains from '@/app/assets/images/Mountains'
-import Noize from '@/app/assets/images/Noize'
+import Noise from '@/app/assets/images/Noise'
 import Trees from '@/app/assets/images/Trees'
 import { Parallax } from 'react-scroll-parallax'
+import Image from 'next/image'
+import backgroundImage from '../../../public/assets/images/background-image-5.jpg'
 
 const Education = () => (
 	<div
@@ -29,14 +31,18 @@ const Education = () => (
 					translateX={[-20, 20]}
 					className='absolute -bottom-4 lg:-bottom-12 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-[20%] w-[140px] h-[100px] sm:w-[220px] sm:h-[160px] lg:w-[320px] lg:h-[220px] 2xl:w-[400px] 2xl:h-[300px] -z-10 overflow-hidden'
 				>
-					<Parallax
-						scale={[1, 2]}
-						className='w-full h-full bg-[url("../../public/assets/images/background-image-5.jpg")] bg-cover bg-center bg-no-repeat -z-10'
-					/>
+					<Parallax scale={[1, 2]} className='w-full h-full -z-10'>
+						<Image
+							className='w-full h-full'
+							src={backgroundImage}
+							alt='background-image'
+							loading='eager'
+						/>
+					</Parallax>
 				</Parallax>
 				<Mountains className='hidden lg:block w-full -bottom-[20%] 2xl:bottom-[140%] left-1/2 -translate-x-1/2' />
 				<Rectangle className='hidden lg:block -bottom-2 left-[50%] -translate-x-1/2 w-[260px] h-[100px]' />
-				<Noize className='top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 -z-20' />
+				<Noise className='top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 -z-20' />
 			</div>
 			<Title variant='h3' className='mb-2 !text-main-color'>
 				Master of Applied Mathematics

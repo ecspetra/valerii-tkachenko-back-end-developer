@@ -5,7 +5,7 @@ type PropsType = {
 	className?: string
 }
 
-const Mountains: FC<PropsType> = ({ className }) => {
+const Noise: FC<PropsType> = ({ className }) => {
 	return (
 		<span
 			className={classNames(
@@ -16,4 +16,4 @@ const Mountains: FC<PropsType> = ({ className }) => {
 	)
 }
 
-export default Mountains
+export default Noise

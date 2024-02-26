@@ -7,10 +7,13 @@ import LinesShape from '@/app/assets/images/LinesShape'
 import Rectangle from '@/app/assets/images/Rectangle'
 import Trees from '@/app/assets/images/Trees'
 import BasicCircle from '@/app/assets/images/BasicCircle'
-import Noize from '@/app/assets/images/Noize'
+import Noise from '@/app/assets/images/Noise'
 import { Parallax } from 'react-scroll-parallax'
 import Sun from '@/app/assets/images/Sun'
 import useDecreaseShapeSize from '@/hooks/useDecreaseShapeSize'
+import backgroundImage from '../../../public/assets/images/background-image-4.jpg'
+import Image from 'next/image'
+import summaryImageTwo from '../../../public/assets/images/summary-image-2.jpg'
 
 const Skills = () => {
 	const isDecreaseShapeSize = useDecreaseShapeSize()
@@ -32,7 +35,12 @@ const Skills = () => {
 							translateY={[50, -50]}
 							className='relative z-10'
 						>
-							<img src={skillsImageOne.src} alt='Skills' />
+							<Image
+								className='w-full h-full'
+								src={skillsImageOne}
+								alt='Skills'
+								loading='eager'
+							/>
 						</Parallax>
 						<NestedCircles
 							count={4}
@@ -49,7 +57,7 @@ const Skills = () => {
 								<Sun className='w-full h-full' />
 							</Parallax>
 						</div>
-						<Noize className='-top-[30%] sm:top-[40%] lg:top-[10%] 2xl:-top-[30%] left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-[40%] lg:left-[20%] 2xl:left-[10%]' />
+						<Noise className='-top-[30%] sm:top-[40%] lg:top-[10%] 2xl:-top-[30%] left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-[40%] lg:left-[20%] 2xl:left-[10%]' />
 					</div>
 					<div className='w-full max-w-2xl lg:max-w-[60%] relative z-10 order-1 lg:order-2'>
 						<div className='sm:mb-28 2xl:mb-40 relative'>
@@ -64,8 +72,15 @@ const Skills = () => {
 							>
 								<Parallax
 									scale={[1, 2]}
-									className='w-full h-full bg-[url("../../public/assets/images/background-image-4.jpg")] bg-cover bg-center bg-no-repeat -z-10'
-								/>
+									className='w-full h-full -z-10'
+								>
+									<Image
+										className='w-full h-full'
+										src={backgroundImage}
+										alt='background-image'
+										loading='eager'
+									/>
+								</Parallax>
 							</Parallax>
 							<Parallax
 								translateY={[50, -50]}

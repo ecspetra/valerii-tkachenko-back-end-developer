@@ -9,9 +9,11 @@ import LinesShape from '@/app/assets/images/LinesShape'
 import Rectangle from '@/app/assets/images/Rectangle'
 import Building from '@/app/assets/images/Building'
 import BasicCircle from '@/app/assets/images/BasicCircle'
-import Noize from '@/app/assets/images/Noize'
+import Noise from '@/app/assets/images/Noise'
 import { Parallax } from 'react-scroll-parallax'
 import useDecreaseShapeSize from '@/hooks/useDecreaseShapeSize'
+import backgroundImage from '../../../public/assets/images/background-image-2.jpg'
+import Image from 'next/image'
 
 const Summary = () => {
 	const isDecreaseShapeSize = useDecreaseShapeSize()
@@ -25,8 +27,15 @@ const Summary = () => {
 				translateX={[100, 0]}
 				translateY={[100, 0]}
 				opacity={[0.3, 1]}
-				className='absolute hidden lg:block top-0 right-0 w-[30%] h-[300px] 2xl:h-[30%] bg-[url("../../public/assets/images/background-image-2.jpg")] bg-cover bg-center bg-no-repeat'
-			/>
+				className='absolute hidden lg:block top-0 right-0 w-[30%] h-[300px] 2xl:h-[30%]'
+			>
+				<Image
+					className='w-full h-full'
+					src={backgroundImage}
+					alt='background-image'
+					loading='eager'
+				/>
+			</Parallax>
 			<Parallax
 				translateY={[50, -100]}
 				className='absolute hidden lg:block w-[200px] h-[300px] bottom-0 right-[15%] 2xl:right-[25%]'
@@ -109,18 +118,28 @@ const Summary = () => {
 					translateY={[10, -10]}
 					className='absolute max-w-[90%] sm:max-w-[65%] 2xl:max-w-[80%] -bottom-32 2xl:-bottom-60 left-0 w-full'
 				>
-					<img src={summaryImageTwo.src} alt='Summary' />
+					<Image
+						className='w-full h-full'
+						src={summaryImageTwo}
+						alt='Summary'
+						loading='eager'
+					/>
 				</Parallax>
 				<Parallax
 					translateX={[10, -10]}
 					className='relative ml-auto max-w-[70%] sm:max-w-[50%] 2xl:max-w-[60%] overflow-hidden'
 				>
-					<img src={summaryImageOne.src} alt='Summary' />
+					<Image
+						className='w-full h-full'
+						src={summaryImageOne}
+						alt='Summary'
+						loading='eager'
+					/>
 					<Rectangle className='hidden lg:block -bottom-12 left-[40%] w-[20%] h-[30%]' />
 				</Parallax>
 				<LinesShape className='-right-24 top-[30%] -rotate-45 -scale-x-100' />
 				<BasicCircle className='left-[25%] top-[25%] scale-75 wide-screen-with-small-height:scale-75 2xl:scale-100' />
-				<Noize className='-top-[20%] 2xl:-top-[40%] left-[20%]' />
+				<Noise className='-top-[20%] 2xl:-top-[40%] left-[20%]' />
 			</Parallax>
 			<Contacts />
 		</div>
