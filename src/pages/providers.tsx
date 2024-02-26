@@ -4,7 +4,7 @@ import { ReactNode } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import { useMediaQuery } from 'react-responsive'
 
-export const Providers = ({ children }: { children: ReactNode }) => {
+const Providers = ({ children }: { children: ReactNode }) => {
 	const isSmallScreen = useMediaQuery({ query: '(max-width: 1023px)' })
 
 	return (
@@ -13,3 +13,5 @@ export const Providers = ({ children }: { children: ReactNode }) => {
 		</ParallaxProvider>
 	)
 }
+
+export default Providers

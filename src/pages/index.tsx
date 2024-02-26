@@ -7,7 +7,7 @@ import Experience from '@/components/Experience'
 import Skills from '@/components/Skills'
 import Education from '@/components/Education'
 import BottomBanner from '@/components/BottomBanner'
-import { Providers } from '@/pages/providers'
+import Providers from '@/pages/providers'
 
 const outfitFont = Outfit({
 	weight: ['100', '200', '300', '400', '500', '600'],
