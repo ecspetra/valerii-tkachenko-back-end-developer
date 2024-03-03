@@ -89,7 +89,7 @@ const TopBanner = () => {
 							Developer
 						</span>
 					</Title>
-					<Button>Download CV</Button>
+					<Button>Download Resume</Button>
 				</div>
 			</div>
 		</div>

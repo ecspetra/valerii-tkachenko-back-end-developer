@@ -4,4 +4,4 @@ const nextConfig = {
 	optimizeFonts: true,
 }
 
-export default nextConfig
+module.exports = nextConfig
