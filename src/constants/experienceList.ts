@@ -9,7 +9,7 @@ export const EXPERIENCE_LIST = [
 			'Refactored modules with accumulated technical debt, resulting in a 40% improvement in performance and making future code maintenance and enhancements easier',
 			'Supported the development of 10+ new features',
 		],
-		teckStack: [
+		techStack: [
 			'PHP',
 			'Laravel',
 			'PostgreSQL',
@@ -31,7 +31,7 @@ export const EXPERIENCE_LIST = [
 			'Performed project audit to assess its current state and effectiveness. Identified areas for improvement and provided a report with recommendations aimed at reducing development time by half',
 			'Improved core module by refactoring the codebase and implementing an effective class structure which helped to eliminate code duplication in 3+ places',
 		],
-		teckStack: [
+		techStack: [
 			'PHP',
 			'Laravel',
 			'Symfony',
@@ -56,7 +56,7 @@ export const EXPERIENCE_LIST = [
 			"Successfully brought the project to release being the only developer on it, having to design and develop server logic, build UI, set up server environment and CI/CD pipelines, set up performance monitoring tools, and discuss client's requirements translating them into technical specifications",
 			'Designed and developed a project architecture and an API for a SaaS platform that allows customers to make appointments for the services of an entrepreneur with custom subscription logic for iOS and Android applications',
 		],
-		teckStack: [
+		techStack: [
 			'PHP',
 			'Laravel',
 			'Lumen',
@@ -92,7 +92,7 @@ export const EXPERIENCE_LIST = [
 			'Contributed to a high-loaded project serving over a million users, obtaining hands-on experience in working with replicated and sharded databases, including database query optimization',
 			'Created an automated template for mass mailings that increased the speed of their creation by 10x, eliminating the need of involving content managers',
 		],
-		teckStack: [
+		techStack: [
 			'PHP',
 			'MySQL',
 			'Memcached',
@@ -117,7 +117,7 @@ export const EXPERIENCE_LIST = [
 		responsibilities: [
 			'Introduced Bootstrap for use as a markup framework resulting in up to 2x faster frontend development',
 		],
-		teckStack: [
+		techStack: [
 			'PHP',
 			'Laravel',
 			'Drupal',
