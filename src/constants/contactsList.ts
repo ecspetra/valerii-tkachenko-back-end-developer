@@ -14,10 +14,10 @@ export const CONTACTS_LIST = [
 		title: 'Address',
 		value: 'Vancouver, BC, Canada',
 	},
-	{
-		title: 'Phone',
-		value: '+1 (778) 957 63 10',
-	},
+	// {
+	// 	title: 'Phone',
+	// 	value: '+0 (000) 000 00 00',
+	// },
 	{
 		title: 'Email',
 		value: 'valeriitkachenko96@gmail.com',

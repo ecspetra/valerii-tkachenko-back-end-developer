@@ -45,7 +45,7 @@ const BottomBanner = () => {
 							Developer
 						</span>
 					</Title>
-					<Button>Download Resume</Button>
+					{/*<Button>Download Resume</Button>*/}
 				</div>
 				<div className='aspect-[2/3] max-w-[560px] 2xl:max-w-[768px] w-full sm:w-[70%] h-full lg:w-auto lg:h-screen ipad-pro:h-auto relative z-10 self-start mb-12 sm:mb-16 lg:mb-0 order-1 lg:order-2'>
 					<Parallax
