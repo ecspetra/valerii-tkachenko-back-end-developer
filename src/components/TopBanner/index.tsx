@@ -9,6 +9,7 @@ import Noise from '@/app/assets/images/Noise'
 import { Parallax } from 'react-scroll-parallax'
 import useDecreaseShapeSize from '@/hooks/useDecreaseShapeSize'
 import Image from 'next/image'
+import DotsAnimation from '@/app/assets/animation/DotsAnimation'
 
 const TopBanner = () => {
 	const isDecreaseShapeSize = useDecreaseShapeSize()
@@ -63,7 +64,10 @@ const TopBanner = () => {
 					</div>
 					<LinesShape className='-left-24 top-[30%] rotate-45' />
 					<Rectangle className='bottom-[30%] -left-6 w-[10%] h-[20%]' />
-					<Noise className='top-[15%] -right-[30%]' />
+					<div className='w-[380px] h-[380px] absolute top-[15%] -right-[30%] -z-10'>
+						<Noise className='top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2' />
+						<DotsAnimation id='dots-animation-1' />
+					</div>
 				</div>
 				<div className='relative z-20 w-full lg:pt-24 xl:pt-16 lg:pb-40 lg:max-w-md xl:max-w-xl'>
 					<div className='relative lg:-ml-[20%] xl:-ml-[50%]'>
