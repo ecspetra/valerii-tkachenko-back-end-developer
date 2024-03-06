@@ -11,7 +11,7 @@ const Experience = () => {
 			className='relative w-screen pt-12 pb-24 sm:pt-20 sm:pb-40 xl:py-60 bg-gradient-to-b from-stone-900 to-background-color'
 			id='experience'
 		>
-			<BackgroundStraightLine className='-top-20 2xl:-top-40 left-1/2 -translate-x-1/2 z-0' />
+			<BackgroundStraightLine className='hidden lg:block -top-20 2xl:-top-40 left-1/2 -translate-x-1/2 z-0' />
 			<div className='container max-w-6xl mx-auto w-full px-6 relative z-10'>
 				<div className='relative mb-20 sm:mb-24 lg:mb-40'>
 					<Title className='!text-center' variant='h2'>
