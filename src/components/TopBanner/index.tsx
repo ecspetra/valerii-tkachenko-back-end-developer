@@ -1,4 +1,3 @@
-import topBannerImage from '../../../public/assets/images/top-banner-image.jpg'
 import Title from '@/app/components/Title'
 import Button from '@/app/components/Button'
 import BackgroundStraightLine from '@/app/assets/images/BackgroundStraightLine'
@@ -23,7 +22,7 @@ const TopBanner = () => {
 			<NestedCircles
 				count={3}
 				radius={isDecreaseShapeSize ? 500 : 800}
-				className='absolute top-[80%] -left-[30%] opacity-20 z-10'
+				className='absolute top-[80%] -left-[30%] opacity-20 z-10 ipad-pro:hidden'
 			/>
 			<div className='container mx-auto w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center lg:gap-12 2xl:gap-36 px-6 py-20 lg:py-0'>
 				<BackgroundStraightLine className='left-[90%] 2xl:left-[80%]' />
@@ -32,7 +31,7 @@ const TopBanner = () => {
 					className='top-[90%] hidden lg:block'
 					isHorizontal
 				/>
-				<div className='aspect-[2/3] max-w-[560px] 2xl:max-w-[768px] w-full sm:w-[70%] h-full lg:w-auto lg:h-screen ipad-pro:h-auto relative z-10 self-start mb-12 sm:mb-16 lg:mb-0'>
+				<div className='aspect-[2/3] max-w-[560px] 2xl:max-w-[768px] sm:w-[70%] w-full h-full lg:w-auto lg:h-screen ipad-pro:h-[640px] relative z-10 self-start mb-12 sm:mb-16 lg:mb-0'>
 					<Parallax
 						translateY={[50, -50]}
 						className='absolute -right-5 top-[20%] lg:top-[50%] xl:top-[60%] z-10 w-11 h-[300px]'
@@ -53,12 +52,15 @@ const TopBanner = () => {
 							isShowSmallCircles
 						/>
 					</Parallax>
-					<Image
-						className='max-h-full max-w-full'
-						src={topBannerImage}
-						alt='Top Banner'
-						loading='eager'
-					/>
+					<div className='aspect-[2/3] w-full relative'>
+						<Image
+							className='w-full h-full'
+							src='/assets/images/top-banner-image.jpg'
+							alt='Top Banner'
+							layout='fill'
+							loading='eager'
+						/>
+					</div>
 					<LinesShape className='-left-24 top-[30%] rotate-45' />
 					<Rectangle className='bottom-[30%] -left-6 w-[10%] h-[20%]' />
 					<Noise className='top-[15%] -right-[30%]' />

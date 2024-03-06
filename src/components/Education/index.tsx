@@ -6,7 +6,6 @@ import Noise from '@/app/assets/images/Noise'
 import Trees from '@/app/assets/images/Trees'
 import { Parallax } from 'react-scroll-parallax'
 import Image from 'next/image'
-import backgroundImage from '../../../public/assets/images/background-image-5.jpg'
 
 const Education = () => (
 	<div
@@ -34,8 +33,9 @@ const Education = () => (
 					<Parallax scale={[1, 2]} className='w-full h-full -z-10'>
 						<Image
 							className='w-full h-full'
-							src={backgroundImage}
+							src='/assets/images/background-image-5.jpg'
 							alt='background-image'
+							layout='fill'
 							loading='eager'
 						/>
 					</Parallax>

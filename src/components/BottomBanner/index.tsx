@@ -1,4 +1,3 @@
-import bottomBannerImage from '../../../public/assets/images/bottom-banner-image.jpg'
 import Title from '@/app/components/Title'
 import Button from '@/app/components/Button'
 import BackgroundStraightLine from '@/app/assets/images/BackgroundStraightLine'
@@ -9,7 +8,6 @@ import BasicCircle from '@/app/assets/images/BasicCircle'
 import Noise from '@/app/assets/images/Noise'
 import { Parallax } from 'react-scroll-parallax'
 import useDecreaseShapeSize from '@/hooks/useDecreaseShapeSize'
-import topBannerImage from '../../../public/assets/images/top-banner-image.jpg'
 import Image from 'next/image'
 
 const BottomBanner = () => {
@@ -47,7 +45,7 @@ const BottomBanner = () => {
 					</Title>
 					{/*<Button>Download Resume</Button>*/}
 				</div>
-				<div className='aspect-[2/3] max-w-[560px] 2xl:max-w-[768px] w-full sm:w-[70%] h-full lg:w-auto lg:h-screen ipad-pro:h-auto relative z-10 self-start mb-12 sm:mb-16 lg:mb-0 order-1 lg:order-2'>
+				<div className='aspect-[2/3] max-w-[560px] 2xl:max-w-[768px] w-full sm:w-[70%] h-full lg:w-auto lg:h-screen ipad-pro:h-[640px] relative z-10 self-start mb-12 sm:mb-16 lg:mb-0 order-1 lg:order-2'>
 					<Parallax
 						translateY={[50, -50]}
 						className='absolute -left-5 top-[30%] sm:top-[50%] z-10 w-11 h-[350px]'
@@ -57,12 +55,15 @@ const BottomBanner = () => {
 							experience
 						</Title>
 					</Parallax>
-					<Image
-						className='max-h-full max-w-full'
-						src={bottomBannerImage}
-						alt='Bottom Banner'
-						loading='eager'
-					/>
+					<div className='aspect-[2/3] w-full relative'>
+						<Image
+							className='w-full h-full'
+							src='/assets/images/bottom-banner-image.jpg'
+							alt='Top Banner'
+							layout='fill'
+							loading='eager'
+						/>
+					</div>
 					<Parallax
 						scale={[0.2, 1.4]}
 						rotate={[-160, 100]}

@@ -1,7 +1,6 @@
 import { SKILLS_LIST } from '@/constants/skillsList'
 import Title from '@/app/components/Title'
 import NestedCircles from '@/app/assets/images/NestedCircles'
-import skillsImageOne from '../../../public/assets/images/skills-image.jpg'
 import BackgroundStraightLine from '@/app/assets/images/BackgroundStraightLine'
 import LinesShape from '@/app/assets/images/LinesShape'
 import Rectangle from '@/app/assets/images/Rectangle'
@@ -11,9 +10,7 @@ import Noise from '@/app/assets/images/Noise'
 import { Parallax } from 'react-scroll-parallax'
 import Sun from '@/app/assets/images/Sun'
 import useDecreaseShapeSize from '@/hooks/useDecreaseShapeSize'
-import backgroundImage from '../../../public/assets/images/background-image-4.jpg'
 import Image from 'next/image'
-import summaryImageTwo from '../../../public/assets/images/summary-image-2.jpg'
 
 const Skills = () => {
 	const isDecreaseShapeSize = useDecreaseShapeSize()
@@ -33,12 +30,13 @@ const Skills = () => {
 					<div className='w-full relative max-w-sm lg:max-w-[40%] lg:pr-24 -mb-40 order-2 lg:order-1'>
 						<Parallax
 							translateY={[50, -50]}
-							className='relative z-10'
+							className='aspect-[2/3] relative z-10'
 						>
 							<Image
 								className='w-full h-full'
-								src={skillsImageOne}
+								src='/assets/images/skills-image.jpg'
 								alt='Skills'
+								layout='fill'
 								loading='eager'
 							/>
 						</Parallax>
@@ -76,8 +74,9 @@ const Skills = () => {
 								>
 									<Image
 										className='w-full h-full'
-										src={backgroundImage}
+										src='/assets/images/background-image-4.jpg'
 										alt='background-image'
+										layout='fill'
 										loading='eager'
 									/>
 								</Parallax>

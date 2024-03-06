@@ -1,8 +1,6 @@
 import Title from '@/app/components/Title'
 import NestedCircles from '@/app/assets/images/NestedCircles'
 import BackgroundStraightLine from '@/app/assets/images/BackgroundStraightLine'
-import summaryImageOne from '../../../public/assets/images/summary-image-1.jpg'
-import summaryImageTwo from '../../../public/assets/images/summary-image-2.jpg'
 import Contacts from '@/components/Contacts'
 import { CONTACTS_LIST } from '@/constants/contactsList'
 import LinesShape from '@/app/assets/images/LinesShape'
@@ -12,7 +10,6 @@ import BasicCircle from '@/app/assets/images/BasicCircle'
 import Noise from '@/app/assets/images/Noise'
 import { Parallax } from 'react-scroll-parallax'
 import useDecreaseShapeSize from '@/hooks/useDecreaseShapeSize'
-import backgroundImage from '../../../public/assets/images/background-image-2.jpg'
 import Image from 'next/image'
 
 const Summary = () => {
@@ -27,12 +24,13 @@ const Summary = () => {
 				translateX={[100, 0]}
 				translateY={[100, 0]}
 				opacity={[0.3, 1]}
-				className='absolute hidden lg:block top-0 right-0 w-[30%] h-[300px] 2xl:h-[30%]'
+				className='aspect-[1/1] w-full h-full absolute hidden lg:block top-0 right-0 max-w-[30%] max-h-[300px] 2xl:max-h-[30%]'
 			>
 				<Image
 					className='w-full h-full'
-					src={backgroundImage}
+					src='/assets/images/background-image-2.jpg'
 					alt='background-image'
+					layout='fill'
 					loading='eager'
 				/>
 			</Parallax>
@@ -116,23 +114,25 @@ const Summary = () => {
 				</Title>
 				<Parallax
 					translateY={[10, -10]}
-					className='absolute max-w-[90%] sm:max-w-[65%] 2xl:max-w-[80%] -bottom-32 2xl:-bottom-60 left-0 w-full'
+					className='aspect-[1000/667] absolute max-w-[90%] sm:max-w-[65%] 2xl:max-w-[80%] -bottom-32 2xl:-bottom-60 left-0 w-full h-full'
 				>
 					<Image
 						className='w-full h-full'
-						src={summaryImageTwo}
+						src='/assets/images/summary-image-2.jpg'
 						alt='Summary'
+						layout='fill'
 						loading='eager'
 					/>
 				</Parallax>
 				<Parallax
 					translateX={[10, -10]}
-					className='relative ml-auto max-w-[70%] sm:max-w-[50%] 2xl:max-w-[60%] overflow-hidden'
+					className='aspect-[1920/1703] relative ml-auto max-w-[70%] sm:max-w-[50%] 2xl:max-w-[60%] overflow-hidden'
 				>
 					<Image
 						className='w-full h-full'
-						src={summaryImageOne}
+						src='/assets/images/summary-image-1.jpg'
 						alt='Summary'
+						layout='fill'
 						loading='eager'
 					/>
 					<Rectangle className='hidden lg:block -bottom-12 left-[40%] w-[20%] h-[30%]' />
