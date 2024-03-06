@@ -16,7 +16,7 @@ const BottomBanner = () => {
 	return (
 		<div
 			className='relative w-screen lg:min-h-screen ipad-pro:min-h-full overflow-hidden lg:overflow-visible'
-			id='cv'
+			id='resume'
 		>
 			<div className='hidden 2xl:block absolute bottom-0 right-0 w-[60vh] h-[90%] max-h-screen opacity-40 bg-[url("../../public/assets/images/background-image-6.jpg")] bg-cover bg-center bg-no-repeat' />
 			<div className='container mx-auto w-full flex flex-wrap lg:flex-nowrap justify-center lg:justify-between items-center lg:gap-12 2xl:gap-36 px-6 py-14 sm:py-20 lg:py-0'>

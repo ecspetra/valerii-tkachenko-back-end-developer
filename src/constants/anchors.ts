@@ -3,7 +3,7 @@ export enum NavigationLinks {
 	Experience = '#experience',
 	Skills = '#skills',
 	Education = '#education',
-	CV = '#cv',
+	Resume = '#resume',
 }
 
 export const LINK_TO_TOP = '#top-banner'
