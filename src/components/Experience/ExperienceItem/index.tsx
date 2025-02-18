@@ -92,23 +92,33 @@ const ExperienceItem: FC<PropsType> = ({
 			>
 				{job}
 			</Title>
-			<ul className='mb-6 2xl:mb-2'>
-				{responsibilities.map((item, idx) => (
-					<li
-						key={idx}
-						className='mb-4 flex justify-start items-start'
-					>
-						<span className='mr-4'>—</span>
-						{item}
-					</li>
-				))}
-			</ul>
-			<p className='flex justify-start items-start flex-wrap'>
-				<span className='mr-4'>Tech stack:</span>
-				{techStack.map((item, idx) => (
-					<Tag key={idx} tag={item} />
-				))}
-			</p>
+			{
+				responsibilities.length > 0 
+					&& (
+						<ul className='mb-6 2xl:mb-2'>
+							{responsibilities.map((item, idx) => (
+								<li
+									key={idx}
+									className='mb-4 flex justify-start items-start'
+								>
+									<span className='mr-4'>—</span>
+									{item}
+								</li>
+							))}
+						</ul>
+					)
+			}
+			{
+				techStack.length > 0 
+					&& (
+						<p className='flex justify-start items-start flex-wrap'>
+							<span className='mr-4'>Tech stack:</span>
+							{techStack.map((item, idx) => (
+								<Tag key={idx} tag={item} />
+							))}
+						</p>
+					) 
+			}
 		</div>
 	</Parallax>
 )
