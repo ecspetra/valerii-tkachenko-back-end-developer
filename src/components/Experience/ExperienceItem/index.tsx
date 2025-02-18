@@ -88,7 +88,7 @@ const ExperienceItem: FC<PropsType> = ({
 			</Parallax>
 			<Title
 				variant='h3'
-				className='w-fit mb-6 2xl:mb-10 !text-main-color border-b border-border-color'
+				className={`w-fit ${responsibilities.length > 0 && 'mb-6 2xl:mb-10'} !text-main-color border-b border-border-color`}
 			>
 				{job}
 			</Title>
