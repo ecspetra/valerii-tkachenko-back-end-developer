@@ -50,7 +50,7 @@ const Education = () => (
 			<Title variant='h3' className='mb-8 !font-extralight'>
 				Pryazovskyi State Technical University, Ukraine
 			</Title>
-			<p className='text-dark-text-color'>Sep 2013 – Jan 2019</p>
+			<p className='text-dark-text-color'>Sep 2017 – Dec 2018</p>
 		</div>
 	</div>
 )
