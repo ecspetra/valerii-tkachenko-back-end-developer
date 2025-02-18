@@ -81,7 +81,7 @@ const Summary = () => {
 						.
 					</p>
 					<p className='lg:pl-20 mb-8 xl:mb-16 text-center lg:text-left'>
-						I have established myself as a software engineer who
+						I have established myself as a software developer who
 						enthusiastically takes on new challenges across the full
 						stack.
 					</p>
