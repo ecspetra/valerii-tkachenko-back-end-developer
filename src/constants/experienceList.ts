@@ -48,7 +48,7 @@ export const EXPERIENCE_LIST = [
 	{
 		company: 'Itransition',
 		branch: '(Software)',
-		country: 'Kyiv, Ukraine',
+		country: 'Kyiv, Ukraine (Remote)',
 		job: 'PHP Developer',
 		date: 'Jul 2021 – Feb 2023',
 		responsibilities: [
