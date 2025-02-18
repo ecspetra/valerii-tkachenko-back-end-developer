@@ -4,10 +4,10 @@ export default function Document() {
 	return (
 		<Html lang='en'>
 			<Head>
-				<title>Valerii Tkachenko | Backend Developer</title>
+				<title>Valerii Tkachenko | Software Developer</title>
 				<meta
 					name='description'
-					content='Valerii Tkachenko - Backend Developer with more than 6 years of experience.'
+					content='Valerii Tkachenko - Software Developer with more than 7 years of experience.'
 				/>
 				<meta name='author' content='Valerii Tkachenko' />
 				<link
@@ -54,11 +54,11 @@ export default function Document() {
 				<meta property='og:type' content='website' />
 				<meta
 					property='og:title'
-					content='Valerii Tkachenko | Backend Developer'
+					content='Valerii Tkachenko | Software Developer'
 				/>
 				<meta
 					property='og:description'
-					content='Valerii Tkachenko - Backend Developer with more than 6 years of experience.'
+					content='Valerii Tkachenko - Software Developer with more than 7 years of experience.'
 				/>
 				<meta
 					property='og:image'
@@ -75,11 +75,11 @@ export default function Document() {
 				/>
 				<meta
 					name='twitter:title'
-					content='Valerii Tkachenko | Backend Developer'
+					content='Valerii Tkachenko | Software Developer'
 				/>
 				<meta
 					name='twitter:description'
-					content='Valerii Tkachenko - Backend Developer with more than 6 years of experience.'
+					content='Valerii Tkachenko - Software Developer with more than 7 years of experience.'
 				/>
 				<meta
 					name='twitter:image'

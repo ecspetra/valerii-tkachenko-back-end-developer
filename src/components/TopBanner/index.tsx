@@ -89,7 +89,7 @@ const TopBanner = () => {
 						className='!mb-14 wide-screen-with-small-height:!mb-16 2xl:!mb-24 !text-4xl xl:!text-5xl !text-main-color'
 					>
 						<span className='block mx-auto lg:mx-0 w-fit xl:mb-2 xl:pb-2 border-b border-border-color'>
-							Software
+							Sr. Software
 						</span>
 						<span className='block mx-auto lg:mx-0 w-fit xl:mb-2 xl:pb-2 border-b border-border-color'>
 							Developer

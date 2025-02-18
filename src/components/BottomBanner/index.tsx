@@ -38,7 +38,7 @@ const BottomBanner = () => {
 						className='!mb-14 wide-screen-with-small-height:!mb-16 2xl:!mb-24 !text-4xl xl:!text-5xl !text-main-color'
 					>
 						<span className='block mx-auto lg:mx-0 w-fit xl:mb-2 xl:pb-2 border-b border-border-color'>
-							Software
+							Sr. Software
 						</span>
 						<span className='block mx-auto lg:mx-0 w-fit xl:mb-2 xl:pb-2 border-b border-border-color'>
 							Developer
@@ -52,7 +52,7 @@ const BottomBanner = () => {
 						className='absolute -left-5 top-[30%] sm:top-[50%] z-10 w-11 h-[350px]'
 					>
 						<Title variant='h3-vertical-label'>
-							<span className='text-main-color'>6+ years</span> of
+							<span className='text-main-color'>7+ years</span> of
 							experience
 						</Title>
 					</Parallax>

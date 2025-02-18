@@ -5,7 +5,7 @@
 
 ## Description
 
-Landing page for Backend Developer portfolio. This project combines a unique design, parallax effects implemented using the 'React Scroll Parallax library'. The page layout is adapted for all devices.
+Landing page for Software Developer portfolio. This project combines a unique design, parallax effects implemented using the 'React Scroll Parallax library'. The page layout is adapted for all devices.
 
 ## Link
 https://www.valeriitkachenko.dev

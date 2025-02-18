@@ -70,7 +70,7 @@ const Summary = () => {
 					<p className='lg:pl-20 mb-8 text-xl xl:text-2xl font-normal relative z-20 text-center lg:text-left'>
 						I offer{' '}
 						<span className='text-main-color border-b border-border-color'>
-							6 years of hands-on experience
+							7 years of hands-on experience
 						</span>{' '}
 						translating business requirements into high-quality
 						software solutions and contributing to the creation and
